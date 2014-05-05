@@ -29,3 +29,15 @@ There are some notes for adding the new URI/domains to the list:
 - Modify "ttp://" text to anchor
 - Redirect URIs to direct link.
 
+
+About script
+------------
+
+### _export.sh
+Just execute this script on this directory.
+Then all script files stored in Firefox's user profile directory will be extracted.
+
+This is prepared for backup easily :D
+
+I create this script for Firefox on Windows.
+
