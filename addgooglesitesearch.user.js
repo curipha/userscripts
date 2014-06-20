@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             Add Google site search
 // @name           Add Google site search
-// @version        0.0.6
+// @version        0.0.7
 // @namespace      curipha
 // @author         curipha
 // @description    Add site search form to all pages.
@@ -20,8 +20,8 @@
   document.head.appendChild(style);
 
   var css =
-  // "z-index" should be below 1000 because an indicator of Autopagerize is located at 1000.
-    '#userjs-add_google { background: #ddd; padding: 10px; line-height: 1; min-width: 250px; border: 2px solid #ccc; position: fixed; top: 0; right: 0; z-index: 999; } '+
+  // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
+    '#userjs-add_google { background: #ddd; padding: 10px; line-height: 1; min-width: 250px; border: 2px solid #ccc; position: fixed; top: 0; right: 0; z-index: 255; } '+
     '#userjs-add_google form { margin: 0 !important; } '+
     '#userjs-add_google input { font-size: 14px; padding: 0.3em !important; display: inline !important; } '+
     '#userjs-add_google input[type="text"] { width: 12em; } '+
