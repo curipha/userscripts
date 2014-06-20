@@ -6,6 +6,7 @@
 // @author         curipha
 // @description    Add site search form to all pages.
 // @include        http://*
+// @include        https://*
 // @run-at         document-end
 // ==/UserScript==
 
