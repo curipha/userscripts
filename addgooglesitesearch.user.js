@@ -7,6 +7,8 @@
 // @description    Add site search form to all pages.
 // @include        http://*
 // @include        https://*
+// @exclude        http://*.google.tld/*
+// @exclude        https://*.google.tld/*
 // @run-at         document-end
 // ==/UserScript==
 
