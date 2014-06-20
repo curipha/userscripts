@@ -8,6 +8,7 @@
 // @include        http://www.google.tld/search?*
 // @include        https://www.google.tld/search?*
 // @run-at         document-end
+// @grant          none
 // ==/UserScript==
 
 (function(){

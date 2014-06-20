@@ -10,6 +10,7 @@
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
 // @run-at         document-end
+// @grant          none
 // ==/UserScript==
 
 (function(){

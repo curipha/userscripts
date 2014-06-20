@@ -8,6 +8,7 @@
 // @include        http://*.2ch.net/*
 // @include        http://*.bbspink.com/*
 // @run-at         document-end
+// @grant          none
 // ==/UserScript==
 
 (function(){

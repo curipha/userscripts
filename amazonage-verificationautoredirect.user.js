@@ -7,6 +7,7 @@
 // @description    Automatic click an "I'm over 18." link at amazon.co.jp.
 // @include        http://www.amazon.co.jp/*
 // @run-at         document-end
+// @grant          none
 // ==/UserScript==
 
 (function() {
