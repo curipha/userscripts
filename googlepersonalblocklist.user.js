@@ -37,6 +37,9 @@
     // Torrents
     '([^/]+.)?nyaa.se',
     
+    // Dll listing
+    'systemexplorer.net/',
+    
     // Mobile pages
     'www.amazon.co.jp/gp/aw/'
   ];
