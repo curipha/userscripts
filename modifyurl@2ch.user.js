@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             Modify URL @2ch
 // @name           Modify URL @2ch
-// @version        0.0.5
+// @version        0.0.6
 // @namespace      curipha
 // @author         curipha
 // @description    Modify "ttp://" text to anchor and redirect URIs to direct link.
@@ -23,7 +23,7 @@
   }
 
   var dd  = document.getElementsByTagName('dd');
-  var ttp = /([^h])(ttps?:\/\/[\x21-\x7E]+)/ig;
+  var ttp = /([^h])(ttps?:\/\/[\x21\x23-\x3b\x3d\x3f-\x7E]+)/ig;
 
   for (var d of dd) {
     d.innerHTML = d.innerHTML.replace(ttp, '$1<a href="h$2">$2</a>');
