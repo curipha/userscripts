@@ -1,13 +1,10 @@
 // ==UserScript==
-// @id             Modify URL @2ch
 // @name           Modify URL @2ch
-// @version        0.0.6
 // @namespace      curipha
-// @author         curipha
 // @description    Modify "ttp://" text to anchor and redirect URIs to direct link.
 // @include        http://*.2ch.net/*
 // @include        http://*.bbspink.com/*
-// @run-at         document-end
+// @version        0.0.6
 // @grant          none
 // ==/UserScript==
 

@@ -1,15 +1,12 @@
 // ==UserScript==
-// @id             Add Google site search
 // @name           Add Google site search
-// @version        0.0.7
 // @namespace      curipha
-// @author         curipha
 // @description    Add site search form to all pages.
 // @include        http://*
 // @include        https://*
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @run-at         document-end
+// @version        0.0.7
 // @grant          none
 // ==/UserScript==
 
