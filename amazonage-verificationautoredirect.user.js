@@ -34,7 +34,7 @@
     }, 120);
   };
 
-  clickit(document);
+  clickit(document.body);
 
   var mo = new MutationObserver(clickit_wrap);
   mo.observe(document.getElementById('nav-cross-shop'), { childList: true, subtree: true });
