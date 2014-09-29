@@ -29,7 +29,7 @@
     '(e?search|item).rakuten.co.jp/',
 
     // Anime leakers
-    '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.fc2.com/',
+    '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
     'anime.dougasouko.com/',
 
     // Torrents
