@@ -14,21 +14,22 @@
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', '([^/]+.)?tweetbuzz.jp/',
 
     // Application doorways
-    '[^/]+.softonic.jp/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.filehippo.com/',
+    '[^/]+.softonic.jp/', 'www.freewarelovers.com/', 'www.appbrain.com/', '([^/]+.)?filehippo.com/',
+    'www.altech-ads.com/',
 
     // SNS doorways
     '([^/]+.)?tweettunnel.com/', 'favstar.fm/', 'twtrp.jp/', 'twtrland.com/',
 
     // Knowledge communities
     '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/', '([^/]+.)?okwave.jp/', 'questionbox.jp.msn.com/',
-    'ziddy.japan.zdnet.com/', 'oshiete.goo.ne.jp/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp',
+    'ziddy.japan.zdnet.com/', 'oshiete.goo.ne.jp/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
     'www.itmedia.co.jp/qa/',
 
     // EC
-    '(e?search|item).rakuten.co.jp',
+    '(e?search|item).rakuten.co.jp/',
 
     // Anime leakers
-    '(anime(tore|post)|(tv|free)animedouga(desu)?|youtubeanisoku1|mvnavian|kodoanime01).blog[0-9]*.fc2.com/',
+    '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.fc2.com/',
     'anime.dougasouko.com/',
 
     // Torrents
