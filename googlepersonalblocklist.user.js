@@ -4,7 +4,7 @@
 // @description    Remove sites from Google search results
 // @include        http://www.google.tld/search?*
 // @include        https://www.google.tld/search?*
-// @version        0.2.0
+// @version        0.2.1
 // @grant          none
 // ==/UserScript==
 
@@ -47,33 +47,37 @@
   var googler = /^https?:\/\/www\.google\.com\/url\?/i;
   var t = 0;
 
-  var blocker =function() {
-    if (t) return;
-    ｔ = setTimeout(function() {
-      var result = document.querySelectorAll('li.g');
-      for (var li of result) {
-        var a = li.querySelector('h3 a');
-        if (typeof(a.href) !== 'string') continue;
+  var blocker = function() {
+    var result = document.querySelectorAll('li.g');
+    for (var li of result) {
+      var a = li.querySelector('h3 a');
+      if (!a) continue;
+      if (typeof(a.href) !== 'string') continue;
 
-        if (googler.test(a.href)) {
-          var alturi = li.querySelector('cite._Rm').textContent;
-          if (typeof(alturi) !== 'string') continue;
+      if (googler.test(a.href)) {
+        var alturi = li.querySelector('cite._Rm').textContent;
+        if (typeof(alturi) !== 'string') continue;
 
-          var uri = /^https?:\/\//.test(uri) ? alturi : 'http://' + alturi;
-        }
-        else {
-          var uri = a.href;
-        }
-
-        if (pattern.test(uri)) li.style.opacity = opacity;
+        alturi = alturi.replace(/\s+\u203A\s+/g, '/');
+        var uri = /^https?:\/\//.test(uri) ? alturi : 'http://' + alturi;
+      }
+      else {
+        var uri = a.href;
       }
 
+      if (pattern.test(uri)) li.style.opacity = opacity;
+    }
+  };
+  var blocker_wrap = function() {
+    if (t) return;
+    ｔ = setTimeout(function() {
+      blocker();
       t = 0;
-    }, 240);
+    }, 120);
   };
 
   blocker();
 
-  var mo = new MutationObserver(blocker);
+  var mo = new MutationObserver(blocker_wrap);
   mo.observe(document.body, { childList: true, subtree: true });
 })();
