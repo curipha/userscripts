@@ -22,7 +22,7 @@
 
     // Knowledge communities
     '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/', '([^/]+.)?okwave.jp/', 'questionbox.jp.msn.com/',
-    'ziddy.japan.zdnet.com/', 'oshiete.goo.ne.jp/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
+    'ziddy.japan.zdnet.com/', 'oshiete1?.(nifty.com|goo.ne.jp)/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
     'www.itmedia.co.jp/qa/',
 
     // EC
