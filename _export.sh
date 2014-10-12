@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Userscripts extractor
 # * Extract *.user.js from Firefox profile directory
