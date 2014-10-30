@@ -6,15 +6,12 @@
 // @include        https://*
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @version        0.0.9
+// @version        0.0.10
 // @grant          none
+// @noframes
 // ==/UserScript==
 
 (function(){
-  if (window.top != window.self) return;
-  if (document.contentType !== 'text/html') return;
-  if (document.body == null) return;
-
   var style = document.createElement('style');
   style.type = 'text/css';
   style.id   = 'userjs-add_google_css';
