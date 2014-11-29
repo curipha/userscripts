@@ -1,7 +1,7 @@
 userscripts
 ===========
-These user scripts are for Greasemonkey/Scriptish on Firefox.
-Maybe they run fine on Google Chrome and/or other browsers.
+These user scripts are for Greasemonkey on Firefox.
+Maybe they can run fine on Google Chrome, Scriptish on Firefox and/or other browsers/extensions.
 
 About scripts
 -------------
