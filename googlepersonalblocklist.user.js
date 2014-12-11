@@ -18,7 +18,7 @@
     'www.altech-ads.com/',
 
     // SNS doorways
-    '([^/]+.)?tweettunnel.com/', 'favstar.fm/', 'twtrp.jp/', 'twtrland.com/',
+    '([^/]+.)?tweettunnel.com/', '([^/]+.)?favstar.fm/', 'twtrp.jp/', 'twtrland.com/',
 
     // Knowledge communities
     '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/', '([^/]+.)?okwave.jp/', 'questionbox.jp.msn.com/',
