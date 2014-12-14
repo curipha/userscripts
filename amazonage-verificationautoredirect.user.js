@@ -4,11 +4,12 @@
 // @description    Click the "I'm over 18" link automatically at amazon.co.jp.
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
-// @version        0.1.2
+// @version        0.2.0
 // @grant          none
 // ==/UserScript==
 
 (function() {
+  // Adult
   var pattern = /black\-curtain\-redirect\.html/;
   var t = 0;
 
@@ -38,4 +39,13 @@
 
   var mo = new MutationObserver(clickit_wrap);
   mo.observe(document.getElementById('nav-cross-shop'), { childList: true, subtree: true });
+
+  // Alcohol
+  var clickit_a = function(elem) {
+    var input = elem.querySelector('.dobBody form input[type="image"]');
+
+    if (input) input.click();
+  };
+
+  clickit_a(document.body);
 })();
