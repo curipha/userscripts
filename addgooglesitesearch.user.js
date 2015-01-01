@@ -7,17 +7,12 @@
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
 // @version        0.0.11
-// @grant          none
+// @grant          GM_addStyle
 // @noframes
 // ==/UserScript==
 
 (function(){
   if (document.contentType !== 'text/html') return;
-
-  var style = document.createElement('style');
-  style.type = 'text/css';
-  style.id   = 'userjs-add_google_css';
-  document.head.appendChild(style);
 
   var css =
   // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
@@ -26,7 +21,7 @@
     '#userjs-add_google input { font: 18px monospace !important; padding: 0.3em !important; display: inline !important; width: 14em !important; } '+
     '#userjs-add_google input[type="submit"] { display: none !important; } '+
     '#userjs-add_google_del { color: #000 !important; font: bold 24px sans-serif !important; margin-right: 8px !important; cursor: pointer !important; }';
-  style.appendChild(document.createTextNode(css));
+  GM_addStyle(css);
 
   var form = document.createElement('div');
   form.id = 'userjs-add_google';
