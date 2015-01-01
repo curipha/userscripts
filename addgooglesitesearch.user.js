@@ -46,7 +46,7 @@
       '</form>';
 
     this.style.opacity = 1;
-    this.removeEventListener('mouseover',init, false);
+    this.removeEventListener('mouseover', init, false);
     this.addEventListener('mouseover', show, false);
 
     document.getElementById('userjs-add_google_del').addEventListener('click', remove, false);
