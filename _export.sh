@@ -3,15 +3,15 @@
 # Userscripts extractor
 # * Extract *.user.js from Firefox profile directory
 
-FXPROFILE=${USERPROFILE//\\/\/}/AppData/Roaming/Mozilla/Firefox/Profiles
-USERJSEXT=*.user.js
+FXPROFILE="${USERPROFILE//\\/\/}/AppData/Roaming/Mozilla/Firefox/Profiles"
+USERJSEXT=.user.js
 
 
 # Remove current user.js
-rm ${USERJSEXT}
+rm *"${USERJSEXT}"
 
 # Copy userscripts from Firefox's user profile directory
-find "${FXPROFILE}" -type f -iname "${USERJSEXT}" -ipath "*/*_scripts/*" -exec cp {} . \;
+find "${FXPROFILE}" -type f -iname "*${USERJSEXT}" -ipath "*/*_scripts/*" -exec cp {} . \;
 
 
 # Remove userscripts not developed by me
@@ -19,15 +19,14 @@ rm autopagerize*.user.js
 
 
 # Change linefeed code to LF only
-for file in `ls -1 ${USERJSEXT}`; do
+for file in `ls -1 *"${USERJSEXT}"`; do
   echo Processing "${file}"...
 
-  tr -d "\r" < ${file} > ${file}.lf
-  mv ${file}.lf ${file}
+  tr -d "\r" < "${file}" > "${file}.lf"
+  mv "${file}.lf" "${file}"
 done
 
 
 # Update mode
-chmod 0644 ${USERJSEXT}
-
+chmod 0644 *"${USERJSEXT}"
 
