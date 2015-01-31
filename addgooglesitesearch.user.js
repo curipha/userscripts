@@ -6,7 +6,7 @@
 // @include        https://*
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @version        0.1.0
+// @version        0.1.1
 // @grant          GM_addStyle
 // @noframes
 // ==/UserScript==
@@ -17,8 +17,8 @@
   var css =
   // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
     '#userjs-add_google { background: #ddd; padding: 10px; line-height: 1; min-width: 200px; border: 2px solid #ccc; position: fixed; top: 0; right: 0; z-index: 255; } '+
-    '#userjs-add_google form { margin: 0 !important; } '+
-    '#userjs-add_google input { font: 18px monospace !important; padding: 0.3em !important; display: inline !important; width: 14em !important; } '+
+    '#userjs-add_google form { margin: 0 !important; padding: 0 !important; } '+
+    '#userjs-add_google input { font: 18px monospace !important; margin: 0 !important; padding: 0.3em !important; display: inline !important; width: 14em !important; height: auto !important; } '+
     '#userjs-add_google input[type="submit"] { display: none !important; } '+
     '#userjs-add_google_del { color: #000 !important; font: bold 24px sans-serif !important; margin-right: 8px !important; cursor: pointer !important; }';
   GM_addStyle(css);
