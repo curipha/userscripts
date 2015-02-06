@@ -3,13 +3,13 @@
 // @namespace   curipha
 // @description Tweak mijikai.jp
 // @include     http://mijikai.jp/
-// @version     0.0.1
+// @version     0.0.2
 // @grant       none
 // ==/UserScript==
 
 (function() {
   var tds = document.querySelectorAll('td[width="8%"]');
-  var pattern = /^.*[fjkloqy-].*\.jp$/;
+  var pattern = /^(.*[joqy-].*|[0-9]?[a-z]+[0-9]+|[a-z]?[0-9]+[a-z]+)\.jp$/;
 
   for (var td of tds) {
     td.innerHTML = td.textContent.toLowerCase();
