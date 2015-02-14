@@ -4,14 +4,12 @@
 // @description    Click the "I'm over 18" link automatically at amazon.co.jp.
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
-// @version        0.2.0
+// @version        0.3.0
 // @grant          none
 // ==/UserScript==
 
 (function() {
   // Adult
-  var t = 0;
-
   var clickit = function(elem) {
     var hrefs = elem.getElementsByTagName('a');
     var pattern = /black\-curtain\-redirect\.html/;
@@ -22,22 +20,25 @@
       }
     }
   };
-  var clickit_wrap = function(mr) {
-    if (t) return;
-    ｔ = setTimeout(function() {
-      for (var mre of mr) {
-        if (mre.target.id !== 'nav_flyout_anchor') continue;
-
-        clickit(mre.target);
-      }
-      t = 0;
-    }, 120);
-  };
-
   clickit(document.body);
 
-  var mo = new MutationObserver(clickit_wrap);
-  mo.observe(document.getElementById('nav-cross-shop'), { childList: true, subtree: true });
+  if (location.pathname.indexOf('/dp/') < 0) {
+    var mo;
+    var clickit_mo = function(mr) {
+      for (var mrl of mr) {
+        for (var i = 0; i < mrl.addedNodes.length; i++) {
+          if (mrl.addedNodes[i].className === 'a-modal-scroller a-declarative') {
+            mo.disconnect();
+            setTimeout(function() { mrl.addedNodes[i].querySelector('[data-sx-lift-black-curtain-action]').click(); }, 120);
+            return;
+          }
+        }
+      }
+    };
+    mo = new MutationObserver(clickit_mo);
+    mo.observe(document.body, { childList: true });
+  }
+
 
   // Alcohol
   var clickit_a = function(elem) {
