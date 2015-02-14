@@ -10,12 +10,11 @@
 
 (function() {
   // Adult
-  var pattern = /black\-curtain\-redirect\.html/;
   var t = 0;
 
   var clickit = function(elem) {
     var hrefs = elem.getElementsByTagName('a');
-
+    var pattern = /black\-curtain\-redirect\.html/;
     for (var a of hrefs) {
       if (pattern.test(a.href)) {
         location.href = a.href;
@@ -43,9 +42,7 @@
   // Alcohol
   var clickit_a = function(elem) {
     var input = elem.querySelector('.dobBody form input[type="image"]');
-
     if (input) input.click();
   };
-
   clickit_a(document.body);
 })();
