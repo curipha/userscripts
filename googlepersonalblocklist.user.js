@@ -26,11 +26,11 @@
     'www.itmedia.co.jp/qa/',
 
     // EC
-    '(e?search|item).rakuten.co.jp/',
+    '(e?search|item).rakuten.co.jp/', '([^/]+.)?.animate-onlineshop.jp',
 
     // Anime leakers
     '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
-    'anime.dougasouko.com/',
+    'anime.dougasouko.com/', '([^/]+.)?anitube.se/',
 
     // Torrents
     '([^/]+.)?nyaa.se',
