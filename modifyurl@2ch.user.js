@@ -3,14 +3,15 @@
 // @namespace      curipha
 // @description    Modify "ttp://" text to anchor and redirect URIs to direct link.
 // @include        http://*.2ch.net/*
+// @include        http://*.2ch.sc/*
 // @include        http://*.bbspink.com/*
-// @version        0.0.6
+// @version        0.0.7
 // @grant          none
 // ==/UserScript==
 
 (function(){
   var anchor  = document.getElementsByTagName('a');
-  var pattern = /^http:\/\/([^\/]+\.)?(ime\.(nu|st)\/|pinktower\.com\/|jump\.2ch\.net\/\?)/i;
+  var pattern = /^http:\/\/([^\/]+\.)?(ime\.(nu|st)\/|pinktower\.com\/|2ch\.io\/|jump\.2ch\.net\/\?)/i;
 
   for (var a of anchor) {
     if (a.href.indexOf('http') !== 0) continue;
