@@ -4,11 +4,14 @@
 // @description    Click the "I'm over 18" link automatically at amazon.co.jp.
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
-// @version        0.3.0
+// @version        0.3.1
 // @grant          none
 // ==/UserScript==
 
 (function() {
+  if (document.contentType !== 'text/html') return;
+  if (window.top !== window.self) return;
+
   // Adult
   var clickit = function(elem) {
     var hrefs = elem.getElementsByTagName('a');
