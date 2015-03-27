@@ -51,9 +51,8 @@
   var blocker = function() {
     var result = document.querySelectorAll('li.g');
     for (var li of result) {
-      var a = li.querySelector('h3 a');
+      var a = li.querySelector('h3 > a[href]');
       if (!a) continue;
-      if (typeof(a.href) !== 'string') continue;
 
       if (googler.test(a.href)) {
         var alturi = li.querySelector('cite._Rm').textContent;
