@@ -6,6 +6,7 @@
 // @include        https://www.google.tld/search?*
 // @version        0.2.1
 // @grant          none
+// @noframes
 // ==/UserScript==
 
 (function(){
