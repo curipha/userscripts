@@ -4,7 +4,7 @@
 // @description    Remove sites from Google search results
 // @include        http://www.google.tld/search?*
 // @include        https://www.google.tld/search?*
-// @version        0.2.1
+// @version        0.2.2
 // @grant          none
 // @noframes
 // ==/UserScript==
@@ -12,26 +12,30 @@
 (function(){
   var block = [
     // General doorways
-    'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', '([^/]+.)?tweetbuzz.jp/',
+    'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/',
+    '([^/]+.)?tweetbuzz.jp/',
 
     // Application doorways
-    '[^/]+.softonic.jp/', 'www.freewarelovers.com/', 'www.appbrain.com/', '([^/]+.)?filehippo.com/',
-    'www.altech-ads.com/', '[^/]+.softpedia.com',
+    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
+    '([^/]+.)?filehippo.com/', '[^/]+.softonic.(com|jp)/', '[^/]+.softpedia.com',
 
     // SNS doorways
-    '([^/]+.)?tweettunnel.com/', '([^/]+.)?favstar.fm/', 'twtrp.jp/', 'twtrland.com/',
+    'twtrp.jp/', 'twtrland.com/',
+    '([^/]+.)?tweettunnel.com/', '([^/]+.)?favstar.fm/',
 
     // Knowledge communities
-    '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/', '([^/]+.)?okwave.jp/', 'questionbox.jp.msn.com/',
-    'ziddy.japan.zdnet.com/', 'oshiete1?.(nifty.com|goo.ne.jp)/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
-    'www.itmedia.co.jp/qa/',
+    'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/', 'www.itmedia.co.jp/qa/',
+    'oshiete1?.(nifty.com|goo.ne.jp)/',
+    '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
 
     // EC
-    '(e?search|item).rakuten.co.jp/', '([^/]+.)?.animate-onlineshop.jp',
+    '(e?search|item).rakuten.co.jp/',
+    '([^/]+.)?.animate-onlineshop.jp',
 
     // Anime leakers
+    'anime.dougasouko.com/',
+    '([^/]+.)?anitube.se/',
     '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
-    'anime.dougasouko.com/', '([^/]+.)?anitube.se/',
 
     // Torrents
     '([^/]+.)?nyaa.se',
