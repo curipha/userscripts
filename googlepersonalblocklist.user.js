@@ -16,7 +16,7 @@
 
     // Application doorways
     '[^/]+.softonic.jp/', 'www.freewarelovers.com/', 'www.appbrain.com/', '([^/]+.)?filehippo.com/',
-    'www.altech-ads.com/',
+    'www.altech-ads.com/', '[^/]+.softpedia.com',
 
     // SNS doorways
     '([^/]+.)?tweettunnel.com/', '([^/]+.)?favstar.fm/', 'twtrp.jp/', 'twtrland.com/',
