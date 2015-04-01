@@ -13,17 +13,11 @@
   if (document.contentType !== 'text/html') return;
 
   // Adult
-  var clickit = function(elem) {
-    var hrefs = elem.getElementsByTagName('a');
-    var pattern = /black\-curtain\-redirect\.html/;
-    for (var a of hrefs) {
-      if (pattern.test(a.href)) {
-        location.href = a.href;
-        return;
-      }
-    }
-  };
-  clickit(document.body);
+  var a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]');
+  if (a)  {
+    location.href = a.href;
+    return;
+  }
 
   if (location.pathname.indexOf('/dp/') < 0) {
     var mo;
