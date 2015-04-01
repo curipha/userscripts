@@ -19,6 +19,13 @@
     return;
   }
 
+  // Alcohol
+  var input = document.body.querySelector('.dobBody form input[type="image"]');
+  if (input) {
+    input.click();
+    return;
+  }
+
   if (location.pathname.indexOf('/dp/') < 0) {
     var mo;
     var clickit_mo = function(mr) {
@@ -35,12 +42,4 @@
     mo = new MutationObserver(clickit_mo);
     mo.observe(document.body, { childList: true });
   }
-
-
-  // Alcohol
-  var clickit_a = function(elem) {
-    var input = elem.querySelector('.dobBody form input[type="image"]');
-    if (input) input.click();
-  };
-  clickit_a(document.body);
 })();
