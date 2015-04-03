@@ -6,7 +6,7 @@
 // @include        https://*
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @version        0.1.1
+// @version        0.1.2
 // @grant          GM_addStyle
 // @noframes
 // ==/UserScript==
@@ -26,28 +26,17 @@
   var form = document.createElement('div');
   form.id = 'userjs-add_google';
   form.style.opacity = 0;
-  form.innerHTML = '&nbsp;';
-  form.addEventListener('mouseover', init, false);
-  form.addEventListener('mouseout', hide, false);
+  form.innerHTML =
+    '<form action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">'+
+    '<span id="userjs-add_google_del">&times;</span>'+
+    '<input type="text" name="q" placeholder="' + document.domain + ' を検索" /><input type="submit" value="Search" />'+
+    '<input type="hidden" name="as_sitesearch" value="' + document.domain + '" />'+
+    '<input type="hidden" name="safe" value="off" />'+
+    '</form>';
   document.body.appendChild(form);
 
-  function init() {
-    this.innerHTML =
-      '<form action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">'+
-      '<span id="userjs-add_google_del">&times;</span>'+
-      '<input type="text" name="q" placeholder="' + document.domain + ' を検索" /><input type="submit" value="Search" />'+
-      '<input type="hidden" name="as_sitesearch" value="' + document.domain + '" />'+
-      '<input type="hidden" name="safe" value="off" />'+
-      '</form>';
+  form.addEventListener('mouseover', (function(){ this.style.opacity = 1 }), false);
+  form.addEventListener('mouseout',  (function(){ this.style.opacity = 0 }), false);
 
-    this.style.opacity = 1;
-    this.removeEventListener('mouseover', init, false);
-    this.addEventListener('mouseover', show, false);
-
-    document.getElementById('userjs-add_google_del').addEventListener('click', remove, false);
-  }
-  function remove() { document.body.removeChild(form); }
-
-  function hide() { form.style.opacity = 0; }
-  function show() { form.style.opacity = 1; }
+  document.getElementById('userjs-add_google_del').addEventListener('click', (function(){ document.body.removeChild(form) }), false);
 })();
