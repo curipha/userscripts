@@ -16,7 +16,7 @@
     '([^/]+.)?tweetbuzz.jp/',
 
     // Application doorways
-    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
+    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/', '[^/]+.softonic.(com|jp)/', '[^/]+.softpedia.com', '[^/]+.uptodown.com',
     '[^/]+.dll-files.com',
 
