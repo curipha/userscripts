@@ -13,7 +13,6 @@
   var block = [
     // General doorways
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/',
-    '([^/]+.)?tweetbuzz.jp/',
 
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
@@ -21,8 +20,8 @@
     '[^/]+.dll-files.com',
 
     // SNS doorways
-    'twtrp.jp/', 'twtrland.com/',
-    '([^/]+.)?tweettunnel.com/', '([^/]+.)?favstar.fm/',
+    '([^/]+.)?favstar.fm/',
+    '([^/]+.)?(tweet|twtr)[^/]+.(com|jp)/', // genocide...
 
     // Knowledge communities
     'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/', 'www.itmedia.co.jp/qa/',
