@@ -27,7 +27,7 @@
   }
 
 
-  // Adult shown up in delay
+  // Adult (shown up in delay)
   if (!location.pathname.contains('/dp/')) {
     var mo;
     var clickit_mo = function(mr) {
