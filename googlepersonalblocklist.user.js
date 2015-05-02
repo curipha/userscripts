@@ -14,6 +14,7 @@
     // General doorways
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
     'b.hatena.ne.jp/entrylist/',
+    '[^/]+.s.hatena.ne.jp/',
 
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
