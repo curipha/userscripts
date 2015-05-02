@@ -16,8 +16,7 @@
     'b.hatena.ne.jp/entrylist/',
 
     // Application doorways
-    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
-    '([^/]+.)?filehippo.com/', '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com',
+    '([^/]+.)?filehippo.com/', '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
@@ -30,7 +29,7 @@
 
     // EC
     '(e?search|item).rakuten.co.jp/',
-    '([^/]+.)?.animate-onlineshop.jp',
+    '([^/]+.)?.animate-onlineshop.jp/',
 
     // Anime leakers
     'anime.dougasouko.com/',
@@ -38,7 +37,7 @@
     '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
 
     // Torrents
-    '([^/]+.)?nyaa.se',
+    '([^/]+.)?nyaa.se/',
 
     // Dll listing
     'systemexplorer.net/', '[^/]+.dll-files.com/',
