@@ -12,7 +12,8 @@
 (function(){
   var block = [
     // General doorways
-    'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/',
+    'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
+    'b.hatena.ne.jp/entrylist/',
 
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
