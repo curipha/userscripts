@@ -18,7 +18,6 @@
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/', '[^/]+.softonic.(com|jp)/', '[^/]+.softpedia.com', '[^/]+.uptodown.com',
-    '[^/]+.dll-files.com',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
@@ -42,7 +41,7 @@
     '([^/]+.)?nyaa.se',
 
     // Dll listing
-    'systemexplorer.net/',
+    'systemexplorer.net/', '[^/]+.dll-files.com/',
 
     // Mobile pages
     'www.amazon.co.jp/gp/aw/'
