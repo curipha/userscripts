@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Amazon age-verification autoredirect
 // @namespace      curipha
-// @description    Click the "I'm over 18" link automatically at amazon.co.jp.
+// @description    Click the "I'm over 18" automatically
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
 // @version        0.3.3

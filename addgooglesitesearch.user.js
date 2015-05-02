@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Add Google site search
 // @namespace      curipha
-// @description    Add site search form to all pages.
+// @description    Add a site search form to all pages
 // @include        http://*
 // @include        https://*
 // @exclude        http://*.google.tld/*
