@@ -16,15 +16,18 @@
     'b.hatena.ne.jp/entrylist/',
 
     // Application doorways
-    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
-    '([^/]+.)?filehippo.com/', '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
+    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
+    'www.vector.co.jp/soft/',
+    '([^/]+.)?filehippo.com/',
+    '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
     '([^/]+.)?(tweet|twtr)[^/.]+.(com|jp)/', // genocide...
 
     // Knowledge communities
-    'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/', 'www.itmedia.co.jp/qa/',
+    'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
+    'www.itmedia.co.jp/qa/',
     'oshiete1?.(nifty.com|goo.ne.jp)/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
 
