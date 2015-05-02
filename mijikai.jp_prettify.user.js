@@ -5,6 +5,7 @@
 // @include     http://mijikai.jp/
 // @version     0.0.2
 // @grant       none
+// @noframes
 // ==/UserScript==
 
 (function() {

@@ -7,6 +7,7 @@
 // @include        http://*.bbspink.com/*
 // @version        0.0.7
 // @grant          none
+// @noframes
 // ==/UserScript==
 
 (function(){
