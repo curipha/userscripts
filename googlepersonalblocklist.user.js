@@ -17,7 +17,7 @@
 
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
-    '([^/]+.)?filehippo.com/', '[^/]+.softonic.(com|jp)/', '[^/]+.softpedia.com', '[^/]+.uptodown.com',
+    '([^/]+.)?filehippo.com/', '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
