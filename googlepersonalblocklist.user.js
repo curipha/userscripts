@@ -16,6 +16,7 @@
     'b.hatena.ne.jp/entrylist/',
 
     // Application doorways
+    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/', 'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/', '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
 
     // SNS doorways
