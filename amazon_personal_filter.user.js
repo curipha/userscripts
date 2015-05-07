@@ -26,8 +26,8 @@
       }
     };
 
-    var mo = new MutationObserver(opaque_result);
-    mo.observe(document.body, { childList: true, subtree: true });
+    var mo_sr = new MutationObserver(opaque_result);
+    mo_sr.observe(document.body, { childList: true, subtree: true });
   }
 
   // Best sellers
@@ -41,7 +41,7 @@
       }
     };
 
-    var mo = new MutationObserver(opaque_bestseller);
-    mo.observe(document.body, { childList: true });
+    var mo_bs = new MutationObserver(opaque_bestseller);
+    mo_bs.observe(document.body, { childList: true });
   }
 })();
