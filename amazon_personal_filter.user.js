@@ -57,4 +57,17 @@
     var mo_bs = new MutationObserver(opaque_bestseller);
     mo_bs.observe(document.body, { childList: true });
   }
+
+  // General item list
+  var opaque_itemlist = function() {
+    var result = document.getElementsByClassName('s9hl');
+    for (var item of result) {
+      var title = item.querySelector('a.title[title]');
+      if (!title) continue;
+      if (pattern.test(title.getAttribute('title'))) item.style.opacity = opacity;
+    }
+  };
+
+  var mo_il = new MutationObserver(opaque_itemlist);
+  mo_il.observe(document.body, { childList: true });
 })();
