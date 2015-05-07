@@ -29,6 +29,19 @@
     var mo_sr = new MutationObserver(opaque_result);
     mo_sr.observe(document.body, { childList: true, subtree: true });
   }
+  if (document.getElementById('mainResults')) {
+    var opaque_result2 = function() {
+      var result = document.body.querySelectorAll('#mainResults [id^="result_"]');
+      for (var item of result) {
+        var title = item.querySelector('h3 .lrg');
+        if (!title) continue;
+        if (pattern.test(title.innerHTML)) item.style.opacity = opacity;
+      }
+    };
+
+    var mo_sr2 = new MutationObserver(opaque_result2);
+    mo_sr2.observe(document.body, { childList: true });
+  }
 
   // Best sellers
   if (document.getElementById('zg_col1')) {
