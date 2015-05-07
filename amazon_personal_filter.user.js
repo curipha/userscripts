@@ -20,9 +20,9 @@
     var opaque_result = function() {
       var result = document.body.querySelectorAll('#searchTemplate .s-result-item');
       for (var item of result) {
-        var h2 = item.querySelector('h2');
-        if (!h2) continue;
-        if (pattern.test(h2.innerHTML)) item.style.opacity = opacity;
+        var title = item.querySelector('h2');
+        if (!title) continue;
+        if (pattern.test(title.innerHTML)) item.style.opacity = opacity;
       }
     };
 
