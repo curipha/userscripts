@@ -6,8 +6,8 @@
 // @include        https://*
 // @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @exclude        http://*.amazon.co.jp/*
-// @exclude        https://*.amazon.co.jp/*
+// @exclude        http://*.amazon.tld/*
+// @exclude        https://*.amazon.tld/*
 // @version        0.1.2
 // @grant          GM_addStyle
 // @noframes
