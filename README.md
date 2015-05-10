@@ -3,32 +3,19 @@ userscripts
 These user scripts are for Greasemonkey on Firefox.
 Maybe they can run fine on Google Chrome, Scriptish on Firefox and/or other browsers/extensions.
 
+Description describes only what appears to be necessary.
+
 About scripts
 -------------
 
-### addgooglesitesearch.user.js
-- Add site search form to all pages.
-
-
-### amazonage-verificationautoredirect.user.js
-- Automatic click "I'm over 18." link at amazon.co.jp.
-
-
-### googlepersonalblocklist.user.js
-- Remove sites from Google search results
-
-#### Blocklist
+### google_personal_blocklist.user.js
 You can add any URI/domains to the block list.
 There are some notes for adding the new URI/domains to the list:
 
-- You have to snip "http://" and "https://" from the head of URI.
-- Generally the expression is treated as RegExp. However "." and "/" is parsed AS-IS. (No escaping is needed.)
-- We suppose to add "/" at the last. The last "/" prevent to false positive.
-
-### modifyurl@2ch.user.js
-- Modify "ttp://" text to anchor
-- Redirect URIs to direct link.
-
+- It needs to snip `http://` and/or `https://` at the beginning of URI
+- The defined rule is interpreted as regular expression
+  - However `.` and `/` is parsed AS-IS (No escaping is needed)
+- Last "/" prevents to false positive
 
 About script
 ------------
