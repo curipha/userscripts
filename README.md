@@ -15,7 +15,7 @@ There are some notes for adding the new URI/domains to the list:
 - It needs to snip `http://` and/or `https://` at the beginning of URI
 - The defined rule is interpreted as regular expression
   - However `.` and `/` is parsed AS-IS (No escaping is needed)
-- Last "/" prevents to false positive
+- Last `/` prevents to false positive
 
 About script
 ------------
