@@ -37,8 +37,10 @@
     '</form>';
   document.body.appendChild(form);
 
-  form.addEventListener('mouseover', (function(){ this.style.opacity = 1 }), false);
-  form.addEventListener('mouseout',  (function(){ this.style.opacity = 0 }), false);
+  var toggle_opacity = function() { this.style.opacity ^= 1; };
+  form.addEventListener('mouseenter', toggle_opacity, false);
+  form.addEventListener('mouseleave', toggle_opacity, false);
 
-  document.getElementById('userjs-add_google_del').addEventListener('click', (function(){ document.body.removeChild(form) }), false);
+  var hidden = function() { document.getElementById('userjs-add_google').style.visibility = 'hidden'; };
+  document.getElementById('userjs-add_google_del').addEventListener('click', hidden, false);
 })();
