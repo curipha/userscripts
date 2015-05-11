@@ -22,7 +22,7 @@
       for (var item of result) {
         var title = item.querySelector('h2');
         if (!title) continue;
-        if (pattern.test(title.innerHTML)) item.style.opacity = opacity;
+        if (pattern.test(title.textContent)) item.style.opacity = opacity;
       }
     };
 
@@ -35,7 +35,7 @@
       for (var item of result) {
         var title = item.querySelector('h3 .lrg');
         if (!title) continue;
-        if (pattern.test(title.innerHTML)) item.style.opacity = opacity;
+        if (pattern.test(title.textContent)) item.style.opacity = opacity;
       }
     };
 
@@ -50,7 +50,7 @@
       for (var item of result) {
         var title = item.querySelector('.zg_title');
         if (!title) continue;
-        if (pattern.test(title.innerHTML)) item.style.opacity = opacity;
+        if (pattern.test(title.textContent)) item.style.opacity = opacity;
       }
     };
 

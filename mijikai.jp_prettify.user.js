@@ -13,7 +13,7 @@
   var pattern = /^(.*[joqy-].*|[0-9]?[a-z]+[0-9]+|[a-z]?[0-9]+[a-z]+)\.jp$/;
 
   for (var td of tds) {
-    td.innerHTML = td.textContent.toLowerCase();
+    td.textContent = td.textContent.toLowerCase();
 
     if (pattern.test(td.textContent)) {
       td.style.color = "#ddd";
