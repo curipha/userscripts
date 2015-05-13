@@ -13,7 +13,7 @@
   if (document.contentType !== 'text/html') return;
 
   var opacity = 0.2;
-  var pattern = /(無料|立ち?読み|お試し|試し?読|スターター|STARTER)/;
+  var pattern = /(無料|立ち?読み|お試し|(試し?|ためし)読|スターター|STARTER|([^0-9０-９][0０])号|[Vv]ol *[．\.] *[0０]([^0-9０-９]|$))/;
 
   // Search result
   if (document.getElementById('searchTemplate')) {
