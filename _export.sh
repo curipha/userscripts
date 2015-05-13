@@ -18,9 +18,6 @@ rm -fv *"${USERJSEXT}"
 # Copy userscripts from Firefox's user profile directory
 find "${FXPROFILE}" -type f -iname "*${USERJSEXT}" -ipath "*/*_scripts/*" -exec cp {} . \;
 
-# Remove userscripts not developed by me
-rm -fv autopagerize*.user.js
-
 
 # Change linefeed code to LF only
 for file in `ls -1 *"${USERJSEXT}"`; do
