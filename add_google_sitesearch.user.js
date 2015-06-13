@@ -16,13 +16,44 @@
 (function(){
   if (document.contentType !== 'text/html') return;
 
-  var css =
   // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
-    '#userjs-add_google { background: #ddd; padding: 10px; line-height: 1; min-width: 200px; border: 2px solid #ccc; position: fixed; top: 0; right: 0; z-index: 255; } '+
-    '#userjs-add_google form { margin: 0 !important; padding: 0 !important; } '+
-    '#userjs-add_google input { font: 18px monospace !important; margin: 0 !important; padding: 0.3em !important; border: 0 none !important; border-radius: 0 !important; outline: 0 none !important; box-shadow: none !important; display: inline !important; width: 14em !important; height: auto !important; } '+
-    '#userjs-add_google input[type="submit"] { display: none !important; } '+
-    '#userjs-add_google_del { color: #000 !important; font: bold 24px sans-serif !important; margin-right: 8px !important; cursor: pointer !important; }';
+  var css = `
+#userjs-add_google {
+  background: #ddd;
+  padding: 10px;
+  line-height: 1;
+  min-width: 200px;
+  border: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 255;
+}
+#userjs-add_google form {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#userjs-add_google input {
+  font: 18px monospace !important;
+  margin: 0 !important;
+  padding: 0.3em !important;
+  border: 0 none !important;
+  border-radius: 0 !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  display: inline !important;
+  width: 14em !important;
+  height: auto !important;
+}
+#userjs-add_google input[type="submit"] {
+  display: none !important;
+}
+#userjs-add_google_del {
+  color: #000 !important;
+  font: bold 24px sans-serif !important;
+  margin-right: 8px !important;
+  cursor: pointer !important;
+}`;
   GM_addStyle(css);
 
   var form = document.createElement('div');
