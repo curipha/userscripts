@@ -12,7 +12,7 @@ cd `dirname "${0}"`
 
 
 # Remove current user.js
-rm -fv *"${USERJSEXT}"
+rm -f *"${USERJSEXT}"
 
 
 # Copy userscripts from Firefox's user profile directory
