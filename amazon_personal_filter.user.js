@@ -13,7 +13,7 @@
   if (document.contentType !== 'text/html') return;
 
   var opacity = 0.2;
-  var pattern = /(無料|立ち?読み|お試し|(試し?|ためし)読|スターター|STARTER|ダイジェスト|雑誌|([^0-9０-９][0０]|創刊)号|[Vv]ol *[．\.] *[0０]([^0-9０-９]|$))/;
+  var pattern = /(無料|立ち?読み|お試し|(試し?|ためし)読|スターター|STARTER|ダイジェスト|雑誌|([^0-9０-９][0０]|創刊)号|[Vv]ol[\s．\.]*[0０]([^0-9０-９]|$))/;
 
   var opaque = function(list_selector, item_selector) {
     return function() {
