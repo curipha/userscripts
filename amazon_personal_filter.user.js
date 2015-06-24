@@ -15,12 +15,14 @@
   var opacity = 0.2;
   var pattern = /(無料|立ち?読み|お試し|(試し?|ためし)読|スターター|STARTER|ダイジェスト|雑誌|([^0-9０-９][0０]|創刊)号|[Vv]ol[\s．\.]*[0０]([^0-9０-９]|$))/;
 
-  var opaque = function(list_selector, item_selector) {
+  var opaque = function(list_selector, item_selector, title_func) {
+    var gettitle = title_func || (function(elem) { return elem.textContent });
+
     return function() {
       var result = document.body.querySelectorAll(list_selector);
       for (var item of result) {
         var title = item.querySelector(item_selector);
-        if (title && pattern.test(title.textContent)) item.style.opacity = opacity;
+        if (title && pattern.test(gettitle(title))) item.style.opacity = opacity;
       }
     };
   };
