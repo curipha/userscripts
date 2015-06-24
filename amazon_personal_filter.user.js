@@ -44,14 +44,6 @@
   }
 
   // General item list
-  var opaque_itemlist = function() {
-    var result = document.getElementsByClassName('s9hl');
-    for (var item of result) {
-      var title = item.querySelector('a.title[title]');
-      if (title && pattern.test(title.getAttribute('title'))) item.style.opacity = opacity;
-    }
-  };
-
-  var mo_il = new MutationObserver(opaque_itemlist);
+  var mo_il = new MutationObserver(opaque('.s9hl', 'a.title[title]', (function(elem) { return elem.getAttribute('title') })));
   mo_il.observe(document.body, { childList: true });
 })();
