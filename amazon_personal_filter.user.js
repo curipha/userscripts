@@ -20,8 +20,7 @@
       var result = document.body.querySelectorAll(list_selector);
       for (var item of result) {
         var title = item.querySelector(item_selector);
-        if (!title) continue;
-        if (pattern.test(title.textContent)) item.style.opacity = opacity;
+        if (title && pattern.test(title.textContent)) item.style.opacity = opacity;
       }
     };
   };
@@ -47,8 +46,7 @@
     var result = document.getElementsByClassName('s9hl');
     for (var item of result) {
       var title = item.querySelector('a.title[title]');
-      if (!title) continue;
-      if (pattern.test(title.getAttribute('title'))) item.style.opacity = opacity;
+      if (title && pattern.test(title.getAttribute('title'))) item.style.opacity = opacity;
     }
   };
 
