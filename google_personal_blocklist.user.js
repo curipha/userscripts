@@ -18,13 +18,14 @@
 
     // Application doorways
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
+    'download.cnet.com/',
     'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/',
     '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
-    '([^/]+.)?(tweet|twtr)[^/.]+.(com|jp)/', // genocide...
+    '([^/]+.)?tw(eet|tr|i(?!tter))[^/.]+.(com|org|jp|cc)/', // genocide...
 
     // Knowledge communities
     'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
@@ -48,7 +49,7 @@
     'systemexplorer.net/', '[^/]+.dll-files.com/',
 
     // Mobile pages
-    'www.amazon.co.jp/gp/aw/'
+    'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
   ];
 
   var opacity = 0.2;
