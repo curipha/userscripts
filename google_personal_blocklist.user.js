@@ -58,7 +58,7 @@
   var t = 0;
 
   var blocker = function() {
-    var result = document.querySelectorAll('li.g');
+    var result = document.getElementsByClassName('g');
     for (var li of result) {
       var a = li.querySelector('h3 > a[href]');
       if (!a) continue;
