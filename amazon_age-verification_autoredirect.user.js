@@ -13,11 +13,13 @@
   if (document.contentType !== 'text/html') return;
 
   // Adult
-  var a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]');
+  var a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]')
+            || document.body.querySelector('#centerBelowPlus a[href$="&fap=1"]');
   if (a)  {
     location.href = a.href;
     return;
   }
+
 
   // Alcohol
   var input = document.body.querySelector('.dobBody form input[type="image"]');
