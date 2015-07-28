@@ -4,7 +4,7 @@
 // @description    Click the "I'm over 18" automatically
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
-// @version        0.3.3
+// @version        0.3.4
 // @grant          none
 // @noframes
 // ==/UserScript==
