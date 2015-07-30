@@ -12,7 +12,7 @@
 
 (function(){
   var anchor  = document.getElementsByTagName('a');
-  var pattern = /^http:\/\/([^\/]+\.)?(ime\.(nu|st)\/|pinktower\.com\/|2ch\.io\/|jump\.2ch\.net\/\?)/i;
+  var pattern = /^http:\/\/([^\/]+?\.)?(ime\.(nu|st)\/|pinktower\.com\/|2ch\.io\/|jump\.2ch\.net\/\?)/i;
 
   for (var a of anchor) {
     if (a.href.indexOf('http') !== 0) continue;

@@ -10,7 +10,7 @@
 
 (function() {
   var tds = document.querySelectorAll('td[width="8%"]');
-  var pattern = /^(.*[joqy-].*|[0-9]?[a-z]+[0-9]+|[a-z]?[0-9]+[a-z]+)\.jp$/;
+  var pattern = /^(.*[joqy-].*|((?=.*([0-9][a-z]|[a-z][0-9])).+))\.jp$/;
 
   for (var td of tds) {
     td.textContent = td.textContent.toLowerCase();
