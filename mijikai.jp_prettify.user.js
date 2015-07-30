@@ -3,7 +3,7 @@
 // @namespace   curipha
 // @description Tweak mijikai.jp
 // @include     http://mijikai.jp/
-// @version     0.0.3
+// @version     0.0.4
 // @grant       none
 // @noframes
 // ==/UserScript==
