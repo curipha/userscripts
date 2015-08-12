@@ -48,6 +48,12 @@
     // Dll listing
     'systemexplorer.net/', '[^/]+.dll-files.com/',
 
+    // Linux package listing
+    'packages.(debian|ubuntu).org/',
+
+    // Mirror
+    'wpedia.goo.ne.jp/',
+
     // Mobile pages
     'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
   ];
