@@ -3,6 +3,9 @@
 # Userscripts extractor
 # * Extract *.user.js from Firefox profile directory
 
+set -o nounset
+set -o errexit
+
 FXPROFILE="${USERPROFILE//\\/\/}/AppData/Roaming/Mozilla/Firefox/Profiles"
 USERJSEXT=.user.js
 
