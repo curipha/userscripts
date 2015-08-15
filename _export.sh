@@ -25,8 +25,6 @@ for file in `ls -1 *${USERJSEXT}`; do
 
   tr -d "\r" < "${file}" | sed -e 's/ \+$//' > "${file}.lf"
   mv "${file}.lf" "${file}"
+  chmod 0644 "${file}"
 done
-
-# Update mode
-chmod 0644 *"${USERJSEXT}"
 
