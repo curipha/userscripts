@@ -9,9 +9,17 @@
 // ==/UserScript==
 
 (function(){
-  document.getElementById('tc11').children[1].selected = true;  // Sheet S
-  document.getElementById('tc21').children[1].selected = true;  // Sheet A
-  document.getElementById('tc31').children[1].selected = true;  // Sheet B
+  // Number of Tickets
+  var selectchilditem = function(id) {
+    var elem = document.getElementById(id);
+    if (elem) {
+      var child = elem.children[1];
+      if (child) child.selected = true;
+    }
+  };
+  selectchilditem('tc11') // Sheet S
+  selectchilditem('tc21') // Sheet A
+  selectchilditem('tc31') // Sheet B
 
   var type = document.body.querySelectorAll('input[name="rt"][value="2"]');
   for (var input of type) {
