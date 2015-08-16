@@ -15,7 +15,7 @@
 
   var type = document.body.querySelectorAll('input[name="rt"][value="2"]');
   for (var input of type) {
-    input.checked = true;
+    if (input) input.checked = true;
   }
 })();
 
