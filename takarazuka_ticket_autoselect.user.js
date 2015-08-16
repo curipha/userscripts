@@ -25,5 +25,8 @@
   for (var input of type) {
     if (input) input.checked = true;
   }
+
+  // Go to bottom of page
+  window.scrollTo(0, document.body.scrollHeight);
 })();
 
