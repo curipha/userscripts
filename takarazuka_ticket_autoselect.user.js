@@ -21,6 +21,7 @@
   selectchilditem('tc21') // Sheet A
   selectchilditem('tc31') // Sheet B
 
+  // Seat location category
   var type = document.body.querySelectorAll('input[name="rt"][value="2"]');
   for (var input of type) {
     if (input) input.checked = true;
