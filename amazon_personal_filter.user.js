@@ -43,7 +43,9 @@
     mo_bs.observe(document.body, { childList: true });
   }
 
-  // General item list
+  // Personalized item list
   var mo_il = new MutationObserver(opaque('.s9hl', 'a.title[title]'));
   mo_il.observe(document.body, { childList: true });
+  var mo_il2 = new MutationObserver(opaque('#buttonWrapper .shoveler-cell', '.p13n-link div[class^="p13n-sc-"]'));
+  mo_il2.observe(document.body, { childList: true, subtree: true });
 })();
