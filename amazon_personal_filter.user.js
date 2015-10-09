@@ -22,7 +22,14 @@
       var result = document.body.querySelectorAll(list_selector);
       for (var item of result) {
         var title = item.querySelector(item_selector);
-        if (title && pattern.test(gettitle(title))) item.style.opacity = opacity;
+        if (title) {
+          if (pattern.test(gettitle(title).trim())) {
+            item.style.opacity = opacity;
+          }
+          else {
+            if (item.style.opacity == opacity) item.style.opacity = 1;
+          }
+        }
       }
     };
   };
