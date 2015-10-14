@@ -4,7 +4,7 @@
 // @description    Obscure annoying contents from search result and best sellers
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
-// @version        0.0.7
+// @version        0.1.0
 // @grant          none
 // @noframes
 // ==/UserScript==
