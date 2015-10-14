@@ -8,7 +8,7 @@
 // @exclude        https://*.google.tld/*
 // @exclude        http://*.amazon.tld/*
 // @exclude        https://*.amazon.tld/*
-// @version        0.1.5
+// @version        0.2.0
 // @grant          GM_addStyle
 // @noframes
 // ==/UserScript==
