@@ -87,7 +87,7 @@
   };
   var blocker_wrap = function() {
     if (t) return;
-    ｔ = setTimeout(function() {
+    t = setTimeout(function() {
       blocker();
       t = 0;
     }, 120);
