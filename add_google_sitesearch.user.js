@@ -14,6 +14,8 @@
 // ==/UserScript==
 
 (function(){
+  'use strict';
+
   if (document.contentType !== 'text/html') return;
 
   // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
