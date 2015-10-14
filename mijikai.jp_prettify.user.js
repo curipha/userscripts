@@ -9,6 +9,8 @@
 // ==/UserScript==
 
 (function() {
+  'use strict';
+
   var tds = document.querySelectorAll('td[width="8%"]');
   var pattern = /^(.*\-.*|((?=.*([0-9][a-z]|[a-z][0-9])).+))\.jp$/;
 
