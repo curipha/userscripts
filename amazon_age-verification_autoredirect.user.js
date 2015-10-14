@@ -10,6 +10,8 @@
 // ==/UserScript==
 
 (function() {
+  'use strict';
+
   if (document.contentType !== 'text/html') return;
 
   // Adult
