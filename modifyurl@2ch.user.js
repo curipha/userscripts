@@ -19,8 +19,7 @@
   for (var a of anchor) {
     if (a.href.indexOf('http') !== 0) continue;
 
-    uri = a.href.replace(pattern, 'http://');
-    a.href = decodeURIComponent(uri);
+    a.href = decodeURIComponent(a.href.replace(pattern, 'http://'));
   }
 
   var dd  = document.getElementsByTagName('dd');
