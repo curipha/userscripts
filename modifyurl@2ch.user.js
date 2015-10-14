@@ -11,6 +11,8 @@
 // ==/UserScript==
 
 (function(){
+  'use strict';
+
   var anchor  = document.getElementsByTagName('a');
   var pattern = /^http:\/\/([^\/]+?\.)?(ime\.(nu|st)\/|pinktower\.com\/|2ch\.io\/|jump\.2ch\.net\/\?)/i;
 
