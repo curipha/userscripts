@@ -5,7 +5,7 @@
 // @include        http://*.2ch.net/*
 // @include        http://*.2ch.sc/*
 // @include        http://*.bbspink.com/*
-// @version        0.0.8
+// @version        0.1.1
 // @grant          none
 // @noframes
 // ==/UserScript==
