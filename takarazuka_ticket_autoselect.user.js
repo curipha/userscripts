@@ -9,6 +9,8 @@
 // ==/UserScript==
 
 (function(){
+  'use strict';
+
   // Number of Tickets
   var selectchilditem = function(id) {
     var elem = document.getElementById(id);
