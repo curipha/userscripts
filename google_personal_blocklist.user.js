@@ -10,6 +10,8 @@
 // ==/UserScript==
 
 (function(){
+  'use strict';
+
   var block = [
     // General doorways
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
