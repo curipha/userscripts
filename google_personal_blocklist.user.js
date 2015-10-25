@@ -15,7 +15,7 @@
   var block = [
     // General doorways
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
-    'b.hatena.ne.jp/entrylist/',
+    'b.hatena.ne.jp/',
     '[^/]+.s.hatena.ne.jp/',
 
     // Application doorways
