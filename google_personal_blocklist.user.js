@@ -23,7 +23,7 @@
     'download.cnet.com/',
     'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/',
-    '[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
+    '(?!news)[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
