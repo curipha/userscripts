@@ -27,7 +27,7 @@
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
-    '([^/]+.)?tw(eet|tr|i(?!tter))[^/.]+.(com|org|jp|cc)/', // genocide...
+    '([^/]+.)?tw(ee|tr|i(?!tter))[^/.]+.[a-z]+/', // genocide...
 
     // Knowledge communities
     'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
