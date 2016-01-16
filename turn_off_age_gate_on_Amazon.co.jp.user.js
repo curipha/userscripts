@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Turn off age gate on Amazon.co.jp
 // @namespace      curipha
-// @description    Click the "I'm over 18" automatically
+// @description    Click "I'm over 18" automatically
 // @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
 // @version        0.4.0
