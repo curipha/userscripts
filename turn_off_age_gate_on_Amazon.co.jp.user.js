@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           Amazon age-verification autoredirect
+// @name           Turn off age gate on Amazon.co.jp
 // @namespace      curipha
 // @description    Click the "I'm over 18" automatically
 // @include        http://www.amazon.co.jp/*
