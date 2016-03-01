@@ -39,6 +39,9 @@
     '(e?search|item).rakuten.co.jp/',
     '([^/]+.)?.animate-onlineshop.jp/',
 
+    // Community
+    'www.nicovideo.jp/',
+
     // Anime leakers
     'anime.dougasouko.com/',
     '([^/]+.)?anitube.se/',
