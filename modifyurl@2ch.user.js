@@ -13,12 +13,14 @@
   'use strict';
 
   var anchor  = document.getElementsByTagName('a');
-  var pattern = /^http:\/\/([^\/]+?\.)?(ime\.(nu|st)\/|pinktower\.com\/|2ch\.io\/|jump\.2ch\.net\/\?)/i;
 
   for (var a of anchor) {
-    if (a.href.indexOf('http') !== 0) continue;
-
-    a.href = decodeURIComponent(a.href.replace(pattern, 'http://'));
+    if (a.href.indexOf('http://jump.2ch.net/?') === 0) {
+      a.href = decodeURIComponent(a.href.slice(21)); // 'http://jump.2ch.net/?'.length -> 21
+    }
+    else if (a.href.indexOf('http://pinktower.com/?') === 0) {
+      a.href = decodeURIComponent('http://' + a.href.slice(22)); // 'http://pinktower.com/?'.length -> 22
+    }
   }
 
   var dd  = document.getElementsByTagName('dd');
