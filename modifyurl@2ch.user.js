@@ -3,7 +3,6 @@
 // @namespace      curipha
 // @description    Modify texts starting with "ttp://" to anchor and redirect URIs to direct link
 // @include        http://*.2ch.net/*
-// @include        http://*.2ch.sc/*
 // @include        http://*.bbspink.com/*
 // @version        0.1.1
 // @grant          none
