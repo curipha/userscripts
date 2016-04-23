@@ -25,15 +25,12 @@
   };
 
   var anchor  = document.getElementsByTagName('a');
+  var pattern = /^http:\/\/(?:jump\.2ch\.net|pinktower\.com)\/\?(https?:\/\/)?/i;
 
   for (var a of anchor) {
-    if (a.href.indexOf('http://jump.2ch.net/?') === 0) {
-      a.href = a.href.slice(21); // 'http://jump.2ch.net/?'.length -> 21
-    }
-    else if (a.href.indexOf('http://pinktower.com/?') === 0) {
-      a.href = 'http://' + a.href.slice(22); // 'http://pinktower.com/?'.length -> 22
-    }
+    a.href = a.href.replace(pattern, function(m, p1) { return p1 ? p1 : 'http://'; } );
   }
+
 
   var res = document.getElementsByTagName('dd');
   if (res.length < 1) res = document.getElementsByClassName('message');
