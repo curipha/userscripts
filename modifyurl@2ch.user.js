@@ -12,6 +12,18 @@
 (function(){
   'use strict';
 
+  var escapeHTML = function(str) {
+    var conv = {
+      '&' : '&amp;',
+      '<' : '&lt;',
+      '>' : '&gt;',
+      '"' : '&quot;',
+      "'" : '&#039;'
+    };
+
+    return str.replace(/[&<>"']/g, function(m) { return conv[m]; });
+  };
+
   var anchor  = document.getElementsByTagName('a');
 
   for (var a of anchor) {
@@ -26,9 +38,14 @@
   var res = document.getElementsByTagName('dd');
   if (res.length < 1) res = document.getElementsByClassName('message');
 
-  var ttp = /([^h]|^)(ttps?:\/\/[\x21\x23-\x3b\x3d\x3f-\x7E]+)/ig;
+  var ttp = /([^h]|^)(ttps?:\/\/[\x21-\x7E]+)/ig;
 
   for (var d of res) {
-    d.innerHTML = d.innerHTML.replace(ttp, '$1<a href="h$2">$2</a>');
+    d.innerHTML = d.innerHTML.replace(
+                                ttp,
+                                function(m, p1, p2) {
+                                  return `${p1}<a href="${encodeURI('h'+p2)}" target="_blank">${escapeHTML(p2)}</a>`;
+                                }
+                              );
   }
 })();
