@@ -23,10 +23,12 @@
     }
   }
 
-  var dd  = document.getElementsByTagName('dd');
+  var res = document.getElementsByTagName('dd');
+  if (res.length < 1) res = document.getElementsByClassName('message');
+
   var ttp = /([^h])(ttps?:\/\/[\x21\x23-\x3b\x3d\x3f-\x7E]+)/ig;
 
-  for (var d of dd) {
+  for (var d of res) {
     d.innerHTML = d.innerHTML.replace(ttp, '$1<a href="h$2">$2</a>');
   }
 })();
