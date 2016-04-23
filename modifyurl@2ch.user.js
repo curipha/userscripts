@@ -28,10 +28,10 @@
 
   for (var a of anchor) {
     if (a.href.indexOf('http://jump.2ch.net/?') === 0) {
-      a.href = decodeURIComponent(a.href.slice(21)); // 'http://jump.2ch.net/?'.length -> 21
+      a.href = a.href.slice(21); // 'http://jump.2ch.net/?'.length -> 21
     }
     else if (a.href.indexOf('http://pinktower.com/?') === 0) {
-      a.href = decodeURIComponent('http://' + a.href.slice(22)); // 'http://pinktower.com/?'.length -> 22
+      a.href = 'http://' + a.href.slice(22); // 'http://pinktower.com/?'.length -> 22
     }
   }
 
