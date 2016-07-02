@@ -14,7 +14,7 @@ USERJSEXT=.user.js
 cd "$(dirname "${0}")"
 
 # Remove current user.js
-rm -f *${USERJSEXT}
+rm -f -- *${USERJSEXT}
 
 # Copy userscripts from Firefox's user profile directory
 find "${FXPROFILE}" -type f -iname "*${USERJSEXT}" -ipath "*/*_scripts/*" -exec cp {} . \;
