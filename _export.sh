@@ -20,7 +20,7 @@ rm -f -- *${USERJSEXT}
 find "${FXPROFILE}" -type f -iname "*${USERJSEXT}" -ipath "*/*_scripts/*" -exec cp {} . \;
 
 # Processing each file
-for file in `ls -1 *${USERJSEXT}`; do
+for file in *${USERJSEXT}; do
   echo Processing "${file}"...
 
   tr -d "\r" < "${file}" | sed -e 's/ \+$//' > "${file}.lf"
