@@ -11,7 +11,7 @@ USERJSEXT=.user.js
 
 
 # Change directory to the same level as this script
-cd `dirname "${0}"`
+cd "$(dirname "${0}")"
 
 # Remove current user.js
 rm -f *${USERJSEXT}
