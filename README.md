@@ -10,7 +10,7 @@ Remarks
 ### google_personal_blocklist.user.js
 There are some notes for adding the new URI/domains to the list:
 
-- Written in modified regular expression
+- Write in modified regular expression
   - `.` and `/` is parsed AS-IS (No escaping is needed)
 - Snip off `http://` or `https://` at the beginning of URI
 - Last `/` prevents to false positive
