@@ -15,7 +15,7 @@
   if (document.contentType !== 'text/html') return;
 
   var opacity = 0.2;
-  var pattern = /(無料|期間限定|(試|立ち?)読|(試|ため)し|スターター|STARTER|ダイジェスト|分冊|単話|1話売り|雑誌|Web版|未分類|プチ(キス|デザ|ララ)|ハーレクイン|([^0-9０-９][0０]|創刊)号|[Vv]ol[\s．\.]*[0０]([^0-9０-９]|$))/;
+  var pattern = /(無料|期間限定|(試|立ち?)読|(試|ため)し|スターター|STARTER|ダイジェスト|分冊|単話|(1話|ばら)売り|雑誌|Web版|未分類|プチ(キス|デザ|ララ)|ハーレクイン|([^0-9０-９][0０]|創刊)号|[Vv]ol[\s．\.]*[0０]([^0-9０-９]|$))/;
 
   var opaque = function(list_selector, item_selector, title_func) {
     var gettitle = title_func || (function(elem) { return elem.getAttribute('title') || elem.textContent });
