@@ -38,6 +38,7 @@
 }
 #userjs-add_google input {
   font: 18px monospace !important;
+  background: #fff !important;
   margin: 0 !important;
   padding: 0.3em !important;
   border: 0 none !important;
