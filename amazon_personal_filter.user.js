@@ -48,7 +48,7 @@
 
   // Best sellers
   if (document.getElementById('zg_col1')) {
-    var mo_bs = new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.zg_title'));
+    var mo_bs = new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.a-col-right .a-link-normal[rel]'));
     mo_bs.observe(document.body, { childList: true });
   }
 
