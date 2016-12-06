@@ -57,4 +57,6 @@
   mo_il.observe(document.body, { childList: true });
   var mo_il2 = new MutationObserver(opaque('#buttonWrapper .shoveler-cell', '.p13n-link div[class^="p13n-sc-"]'));
   mo_il2.observe(document.body, { childList: true, subtree: true });
+  var mo_il3 = new MutationObserver(opaque('#sims-carousel-holder .a-carousel-card', '.p13n-sc-truncated'));
+  mo_il3.observe(document.body, { childList: true });
 })();
