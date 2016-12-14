@@ -4,7 +4,7 @@
 // @description    Obscure annoying sites from search result
 // @include        http://www.google.tld/search?*
 // @include        https://www.google.tld/search?*
-// @version        0.3.1
+// @version        0.3.2
 // @grant          none
 // @noframes
 // ==/UserScript==
