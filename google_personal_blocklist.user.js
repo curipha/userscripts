@@ -68,7 +68,6 @@
 
   var opacity = 0.2;
   var pattern = new RegExp('^https?:\/\/(?:' + block.join('|').replace(/([.\/])/g, '\\$1') + ')', 'i');
-  var googler = /^https?:\/\/www\.google\.com\/url\?/i;
   var t = 0;
 
   var blocker = function() {
@@ -77,18 +76,7 @@
       var a = li.querySelector('h3 > a[href]');
       if (!a) continue;
 
-      if (googler.test(a.href)) {
-        var alturi = li.querySelector('cite._Rm').textContent;
-        if (typeof(alturi) !== 'string') continue;
-
-        alturi = alturi.replace(/\s+\u203A\s+/g, '/');
-        var uri = /^https?:\/\//.test(uri) ? alturi : 'http://' + alturi;
-      }
-      else {
-        var uri = a.href;
-      }
-
-      if (pattern.test(uri)) li.style.opacity = opacity;
+      if (pattern.test(a.href)) li.style.opacity = opacity;
     }
   };
   var blocker_wrap = function() {
