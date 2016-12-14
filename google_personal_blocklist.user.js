@@ -35,6 +35,9 @@
     'oshiete1?.(nifty.com|goo.ne.jp)/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
 
+    // Curation media
+    'matome.naver.jp/',
+
     // EC
     '(e?search|item).rakuten.co.jp/',
     '([^/]+.)?.animate-onlineshop.jp/',
