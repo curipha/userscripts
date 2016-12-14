@@ -24,6 +24,7 @@
     return str.replace(/[&<>"']/g, function(m) { return conv[m]; });
   };
 
+  // Remove intermediate link
   var anchor  = document.getElementsByTagName('a');
   var pattern = /^http:\/\/(?:jump\.2ch\.net|pinktower\.com)\/\?(https?:\/\/)?/i;
 
@@ -31,7 +32,7 @@
     a.href = a.href.replace(pattern, function(m, p1) { return p1 ? p1 : 'http://'; } );
   }
 
-
+  // Linkification
   var res = document.getElementsByTagName('dd');
   if (res.length < 1) res = document.getElementsByClassName('message');
 
