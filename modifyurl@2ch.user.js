@@ -4,7 +4,7 @@
 // @description    Modify texts starting with "ttp://" to anchor and redirect URIs to direct link
 // @include        http://*.2ch.net/*
 // @include        http://*.bbspink.com/*
-// @version        0.2.0
+// @version        0.2.1
 // @grant          none
 // @noframes
 // ==/UserScript==

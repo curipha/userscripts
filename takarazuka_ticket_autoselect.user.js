@@ -3,7 +3,7 @@
 // @namespace      curipha
 // @description    Choose sheet category and number automatically
 // @include        https://ent-kageki.e-tix.jp/ticket/seatnumberselect.html*
-// @version        0.1.0
+// @version        0.1.1
 // @grant          none
 // @noframes
 // ==/UserScript==
