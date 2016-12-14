@@ -26,7 +26,7 @@
 
   // Remove intermediate link
   var anchor  = document.getElementsByTagName('a');
-  var pattern = /^http:\/\/(?:jump\.2ch\.net|pinktower\.com)\/\?(https?:\/\/)?/i;
+  var pattern = /^http:\/\/(?:jump\.2ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
 
   for (var a of anchor) {
     a.href = a.href.replace(pattern, function(m, p1) { return p1 ? p1 : 'http://'; } );
