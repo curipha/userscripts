@@ -36,23 +36,25 @@
     };
   };
 
+  const mo = [];
+
   // Search result
   if (document.getElementById('searchTemplate')) {
-    var mo_sr = new MutationObserver(opaque('#searchTemplate .s-result-item', 'h2'));
-    mo_sr.observe(document.body, { childList: true, subtree: true });
+    mo.push(new MutationObserver(opaque('#searchTemplate .s-result-item', 'h2')));
   }
   if (document.getElementById('mainResults')) {
-    var mo_sr2 = new MutationObserver(opaque('#mainResults [id^="result_"]', 'h3 .lrg'));
-    mo_sr2.observe(document.body, { childList: true });
+    mo.push(new MutationObserver(opaque('#mainResults [id^="result_"]', 'h3 .lrg')));
   }
 
   // Best sellers
   if (document.getElementById('zg_col1')) {
-    var mo_bs = new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.a-col-right .a-link-normal'));
-    mo_bs.observe(document.body, { childList: true });
+    mo.push(new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.a-col-right .a-link-normal')));
   }
 
   // Personalized item list
-  var mo_il3 = new MutationObserver(opaque('#sims-carousel-holder .a-carousel-card', '.p13n-sc-truncated'));
-  mo_il3.observe(document.body, { childList: true });
+  if (document.getElementById('sims-carousel-holder')) {
+    mo.push(new MutationObserver(opaque('#sims-carousel-holder .a-carousel-card', '.p13n-sc-truncated')));
+  }
+
+  mo.map(function(m) { m.observe(document.body, { childList: true, subtree: true }) });
 })();
