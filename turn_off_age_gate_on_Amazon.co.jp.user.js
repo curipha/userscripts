@@ -23,7 +23,6 @@
     return;
   }
 
-
   // Alcohol
   var input = document.body.querySelector('.dobBody form input[type="image"]');
   if (input) {
@@ -31,9 +30,8 @@
     return;
   }
 
-
   // Adult (shown up in delay)
-  if (!location.pathname.contains('/dp/')) {
+  if (!location.pathname.includes('/dp/')) {
     var mo;
     var clickit_mo = function(mr) {
       for (var mrl of mr) {
