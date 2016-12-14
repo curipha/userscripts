@@ -27,10 +27,10 @@
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
-    '([^/]+.)?tw(ee|tr|i(?!tter))[^/.]+.[a-z]+/', // genocide...
+    '([^/]+.)?tw(ee|tr|it(?!ter))[^/.]+.[a-z]+/', // genocide...
 
     // Knowledge communities
-    'questionbox.jp.msn.com/', 'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
+    'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
     'www.itmedia.co.jp/qa/',
     'oshiete1?.(nifty.com|goo.ne.jp)/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
