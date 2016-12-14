@@ -12,10 +12,9 @@
 (function() {
   'use strict';
 
-  var regelem = document.getElementById('nav-regionMenu');
-
+  const regelem = document.getElementById('nav-regionMenu');
   if (regelem) {
-    var region = regelem.textContent.trim();
+    const region = regelem.textContent.trim();
     document.title += ` (${ region.length > 0 ? region : '???' })`
   }
 })();

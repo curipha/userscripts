@@ -11,10 +11,10 @@
 (function() {
   'use strict';
 
-  var tds = document.querySelectorAll('td[width="8%"]');
-  var pattern = /^(.*\-.*|((?=.*([0-9][a-z]|[a-z][0-9])).+))\.jp$/;
+  const tds = document.querySelectorAll('td[width="8%"]');
+  const pattern = /^(.*\-.*|((?=.*([0-9][a-z]|[a-z][0-9])).+))\.jp$/;
 
-  for (var td of tds) {
+  for (let td of tds) {
     td.textContent = td.textContent.toLowerCase();
 
     if (pattern.test(td.textContent)) {

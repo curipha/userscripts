@@ -12,7 +12,7 @@
 (function(){
   'use strict';
 
-  var block = [
+  const block = [
     // General doorways
     'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
     'b.hatena.ne.jp/', 'web.kamel.io/',
@@ -66,20 +66,21 @@
     'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
   ];
 
-  var opacity = 0.2;
-  var pattern = new RegExp('^https?:\/\/(?:' + block.join('|').replace(/([.\/])/g, '\\$1') + ')', 'i');
-  var t = 0;
+  const opacity = 0.2;
+  const pattern = new RegExp('^https?:\/\/(?:' + block.join('|').replace(/([.\/])/g, '\\$1') + ')', 'i');
 
-  var blocker = function() {
-    var result = document.getElementsByClassName('g');
-    for (var li of result) {
-      var a = li.querySelector('h3 > a[href]');
+  let t = 0;
+
+  const blocker = function() {
+    const result = document.getElementsByClassName('g');
+    for (let li of result) {
+      const a = li.querySelector('h3 > a[href]');
       if (!a) continue;
 
       if (pattern.test(a.href)) li.style.opacity = opacity;
     }
   };
-  var blocker_wrap = function() {
+  const blocker_wrap = function() {
     if (t) return;
     t = setTimeout(function() {
       blocker();

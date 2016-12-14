@@ -12,10 +12,10 @@
   'use strict';
 
   // Number of Tickets
-  var selectchilditem = function(id) {
-    var elem = document.getElementById(id);
+  const selectchilditem = function(id) {
+    const elem = document.getElementById(id);
     if (elem) {
-      var child = elem.children[1];
+      const child = elem.children[1];
       if (child) child.selected = true;
     }
   };
@@ -24,8 +24,8 @@
   selectchilditem('tc31') // Sheet B
 
   // Seat location category
-  var type = document.body.querySelectorAll('input[name="rt"][value="2"]');
-  for (var input of type) {
+  const type = document.body.querySelectorAll('input[name="rt"][value="2"]');
+  for (let input of type) {
     if (input) input.checked = true;
   }
 

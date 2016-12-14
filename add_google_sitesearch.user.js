@@ -19,7 +19,7 @@
   if (document.contentType !== 'text/html') return;
 
   // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
-  var css = `
+  const css = `
 #userjs-add_google {
   background: #ddd;
   padding: 10px;
@@ -60,7 +60,7 @@
 }`;
   GM_addStyle(css);
 
-  var form = document.createElement('div');
+  const form = document.createElement('div');
   form.id = 'userjs-add_google';
   form.style.opacity = 0;
   form.innerHTML = `
@@ -73,10 +73,10 @@
 </form>`;
   document.body.appendChild(form);
 
-  var toggle_opacity = function() { this.style.opacity ^= 1; };
+  const toggle_opacity = function() { this.style.opacity ^= 1; };
   form.addEventListener('mouseenter', toggle_opacity, false);
   form.addEventListener('mouseleave', toggle_opacity, false);
 
-  var hidden = function() { document.getElementById('userjs-add_google').style.visibility = 'hidden'; };
+  const hidden = function() { document.getElementById('userjs-add_google').style.visibility = 'hidden'; };
   document.getElementById('userjs-add_google_del').addEventListener('click', hidden, false);
 })();

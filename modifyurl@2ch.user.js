@@ -12,8 +12,8 @@
 (function(){
   'use strict';
 
-  var escapeHTML = function(str) {
-    var conv = {
+  const escapeHTML = function(str) {
+    const conv = {
       '&' : '&amp;',
       '<' : '&lt;',
       '>' : '&gt;',
@@ -25,20 +25,20 @@
   };
 
   // Remove intermediate link
-  var anchor  = document.getElementsByTagName('a');
-  var pattern = /^http:\/\/(?:jump\.2ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
+  const anchor  = document.getElementsByTagName('a');
+  const pattern = /^http:\/\/(?:jump\.2ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
 
-  for (var a of anchor) {
+  for (let a of anchor) {
     a.href = a.href.replace(pattern, function(m, p1) { return p1 ? p1 : 'http://'; } );
   }
 
   // Linkification
-  var res = document.getElementsByTagName('dd');
+  let res = document.getElementsByTagName('dd');
   if (res.length < 1) res = document.getElementsByClassName('message');
 
-  var ttp = /([^h]|^)(ttps?:\/\/[\x21-\x7E]+)/ig;
+  const ttp = /([^h]|^)(ttps?:\/\/[\x21-\x7E]+)/ig;
 
-  for (var d of res) {
+  for (let d of res) {
     d.innerHTML = d.innerHTML.replace(
                                 ttp,
                                 function(m, p1, p2) {
