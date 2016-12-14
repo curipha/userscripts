@@ -89,6 +89,5 @@
 
   blocker();
 
-  var mo = new MutationObserver(blocker_wrap);
-  mo.observe(document.body, { childList: true, subtree: true });
+  (new MutationObserver(blocker_wrap)).observe(document.body, { childList: true, subtree: true });
 })();
