@@ -15,6 +15,6 @@
   const regelem = document.getElementById('nav-regionMenu');
   if (regelem) {
     const region = regelem.textContent.trim();
-    document.title += ` (${ region.length > 0 ? region : '???' })`
+    document.title += ` (${ region.length > 0 ? region : '???' })`;
   }
 })();

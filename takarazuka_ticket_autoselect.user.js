@@ -19,9 +19,9 @@
       if (child) child.selected = true;
     }
   };
-  selectchilditem('tc11') // Sheet S
-  selectchilditem('tc21') // Sheet A
-  selectchilditem('tc31') // Sheet B
+  selectchilditem('tc11'); // Sheet S
+  selectchilditem('tc21'); // Sheet A
+  selectchilditem('tc31'); // Sheet B
 
   // Seat location category
   const type = document.body.querySelectorAll('input[name="rt"][value="2"]');
