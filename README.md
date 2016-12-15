@@ -1,5 +1,7 @@
 userscripts
 ====================
+[![CircleCI](https://circleci.com/gh/curipha/userscripts.svg?style=svg)](https://circleci.com/gh/curipha/userscripts)
+
 These user scripts are for Greasemonkey on Firefox.
 
 Maybe they can run fine on Google Chrome, Scriptish on Firefox and/or other modern browsers/extensions.
