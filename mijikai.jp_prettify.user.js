@@ -18,7 +18,7 @@
     td.textContent = td.textContent.toLowerCase();
 
     if (pattern.test(td.textContent)) {
-      td.style.color = "#ddd";
+      td.style.color = '#ddd';
       //td.innerHTML = '';
     }
   }
