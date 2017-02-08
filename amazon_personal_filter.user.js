@@ -48,7 +48,7 @@
 
   // Best sellers
   if (document.getElementById('zg_col1')) {
-    mo.push(new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.zg_title > a')));
+    mo.push(new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.zg_rankLine + .a-link-normal')));
   }
 
   // Personalized item list
