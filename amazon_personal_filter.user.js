@@ -14,8 +14,18 @@
 
   if (document.contentType !== 'text/html') return;
 
+  const block = [
+    '無料', '期間限定',
+    '(試し?|ためし|立ち?)読', 'お(試|ため)し', 'スターター', 'STARTER', 'ダイジェスト', '分冊', '単話', '(1話|ばら)売り',
+    '雑誌', 'Web版', '未分類',
+    '([^0-9０-９][0０]|創刊)号', '([Vv]ol|VOL)[\s．\.]*[0０]([^0-9０-９]|$)',
+
+    // Rubbish label
+    'プチ(キス|デザ|ララ)', 'ハーレクイン'
+  ];
+
   const opacity = 0.2;
-  const pattern = /(無料|期間限定|(試|立ち?)読|(試|ため)し|スターター|STARTER|ダイジェスト|分冊|単話|(1話|ばら)売り|雑誌|Web版|未分類|プチ(キス|デザ|ララ)|ハーレクイン|([^0-9０-９][0０]|創刊)号|[Vv]ol[\s．\.]*[0０]([^0-9０-９]|$))/;
+  const pattern = new RegExp('(' + block.join('|') + ')', 'u');
 
   const opaque = function(list_selector, item_selector, title_func) {
     const gettitle = title_func || (function(elem) { return elem.getAttribute('title') || elem.textContent; });
