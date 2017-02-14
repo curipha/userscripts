@@ -27,6 +27,7 @@
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
+    '([^/]+.)?twilog.org/',
     '([^/]+.)?tw(ee|tr|it(?!ter))[^/.]+.[a-z]+/', // genocide...
 
     // Knowledge communities
