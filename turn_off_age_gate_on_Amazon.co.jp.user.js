@@ -3,6 +3,9 @@
 // @namespace      curipha
 // @description    Click "I'm over 18" automatically
 // @include        https://www.amazon.co.jp/*
+// @exclude        https://www.amazon.co.jp/ap/*
+// @exclude        https://www.amazon.co.jp/mn/*
+// @exclude        https://www.amazon.co.jp/clouddrive*
 // @version        0.4.1
 // @grant          none
 // @noframes
