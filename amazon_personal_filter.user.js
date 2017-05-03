@@ -3,6 +3,9 @@
 // @namespace      curipha
 // @description    Obscure annoying contents from search result and best sellers
 // @include        https://www.amazon.co.jp/*
+// @exclude        https://www.amazon.co.jp/ap/*
+// @exclude        https://www.amazon.co.jp/mn/*
+// @exclude        https://www.amazon.co.jp/clouddrive*
 // @version        0.1.6
 // @grant          none
 // @noframes
