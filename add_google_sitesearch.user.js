@@ -16,7 +16,6 @@
 
   if (document.contentType !== 'text/html') return;
 
-  // "z-index" should be less than 255 because an indicator of Autopagerize is at 256.
   const css = `
 #userjs-add_google {
   background: #ddd;
@@ -28,7 +27,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 255;
+  z-index: 2048;
 }
 #userjs-add_google form {
   margin: 0 !important;
