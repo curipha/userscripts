@@ -6,7 +6,7 @@
 // @match          https://*.2ch.net/*
 // @match          http://*.bbspink.com/*
 // @match          https://*.bbspink.com/*
-// @version        0.2.2
+// @version        0.2.3
 // @grant          none
 // @noframes
 // ==/UserScript==
