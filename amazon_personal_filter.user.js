@@ -2,7 +2,6 @@
 // @name           Amazon personal filter
 // @namespace      curipha
 // @description    Obscure annoying contents from search result and best sellers
-// @include        http://www.amazon.co.jp/*
 // @include        https://www.amazon.co.jp/*
 // @version        0.1.6
 // @grant          none

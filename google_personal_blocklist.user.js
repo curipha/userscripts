@@ -2,7 +2,6 @@
 // @name           Google personal blocklist
 // @namespace      curipha
 // @description    Obscure annoying sites from search result
-// @include        http://www.google.tld/search?*
 // @include        https://www.google.tld/search?*
 // @version        0.3.3
 // @grant          none

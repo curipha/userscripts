@@ -4,9 +4,7 @@
 // @description    Add a site search form to all pages
 // @include        http://*
 // @include        https://*
-// @exclude        http://*.google.tld/*
 // @exclude        https://*.google.tld/*
-// @exclude        http://*.amazon.tld/*
 // @exclude        https://*.amazon.tld/*
 // @version        0.2.2
 // @grant          GM_addStyle
