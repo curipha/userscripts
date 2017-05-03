@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        Add AWS region to title
-// @namespace   curipha
-// @description Help to know where I am now
-// @match       https://console.aws.amazon.com/*
-// @match       https://*.console.aws.amazon.com/*
-// @version     0.0.2
-// @grant       none
+// @name           Add AWS region to title
+// @namespace      curipha
+// @description    Help to know where I am now
+// @match          https://console.aws.amazon.com/*
+// @match          https://*.console.aws.amazon.com/*
+// @version        0.0.2
+// @grant          none
 // @noframes
 // ==/UserScript==
 
