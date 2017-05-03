@@ -4,7 +4,7 @@
 // @description    Help to know where I am now
 // @match          https://console.aws.amazon.com/*
 // @match          https://*.console.aws.amazon.com/*
-// @version        0.0.2
+// @version        0.0.3
 // @grant          none
 // @noframes
 // ==/UserScript==
