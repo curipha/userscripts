@@ -14,12 +14,11 @@
 (function() {
   'use strict';
 
-  // Adult
-  const a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]')
-            || document.body.querySelector('#centerBelowPlus a[href$="&fap=1"]')
-            || document.body.querySelector('#centerPlus a[href$="&fap=1"]');
-  if (a)  {
-    location.href = a.href;
-    return;
+  if (document.title === '警告：アダルトコンテンツ') {
+    const a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]');
+    if (a)  {
+      location.href = a.href;
+      return;
+    }
   }
 })();
