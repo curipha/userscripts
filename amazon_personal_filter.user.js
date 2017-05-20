@@ -63,10 +63,6 @@
     mo.push(new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.p13n-sc-truncated')));
   }
 
-  // Personalized item list
-  if (document.getElementById('sims-carousel-holder')) {
-    mo.push(new MutationObserver(opaque('#sims-carousel-holder .a-carousel-card', '.p13n-sc-truncated')));
-  }
 
   mo.map(function(m) { m.observe(document.body, { childList: true, subtree: true }); });
 })();
