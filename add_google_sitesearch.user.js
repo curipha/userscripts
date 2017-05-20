@@ -20,8 +20,7 @@
 #userjs-add_google {
   background: #ddd;
   padding: 10px;
-  font: 18px sans-serif;
-  line-height: 1;
+  font: 18px/1 sans-serif;
   min-width: 200px;
   border: 2px solid #ccc;
   position: fixed;
