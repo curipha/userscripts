@@ -14,8 +14,6 @@
 (function() {
   'use strict';
 
-  if (document.contentType !== 'text/html') return;
-
   const block = [
     '無料', '期間限定',
     '(試し?|ためし|立ち?)読', 'お(試|ため)し', 'スターター', 'STARTER', 'ダイジェスト', '分冊', '単話', '(1話|ばら)売り',

@@ -14,8 +14,6 @@
 (function() {
   'use strict';
 
-  if (document.contentType !== 'text/html') return;
-
   // Adult
   const a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]')
             || document.body.querySelector('#centerBelowPlus a[href$="&fap=1"]')
