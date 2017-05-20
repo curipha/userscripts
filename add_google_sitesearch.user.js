@@ -46,9 +46,6 @@
   width: 14em !important;
   height: auto !important;
 }
-#userjs-add_google input[type="submit"] {
-  display: none !important;
-}
 #userjs-add_google_del {
   color: #000 !important;
   font: bold 24px sans-serif !important;
@@ -64,7 +61,6 @@
 <form action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
   <span id="userjs-add_google_del">&times;</span>
   <input type="text" name="q" placeholder="${document.domain} を検索" />
-  <input type="submit" value="Search" />
   <input type="hidden" name="sitesearch" value="${document.domain}" />
   <input type="hidden" name="safe" value="off" />
 </form>`;
