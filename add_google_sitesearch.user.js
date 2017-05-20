@@ -28,11 +28,11 @@
   right: 0;
   z-index: 2048;
 }
-#userjs-add_google form {
+#userjs-add_google_form {
   margin: 0 !important;
   padding: 0 !important;
 }
-#userjs-add_google input {
+#userjs-add_google_input {
   font: 18px monospace !important;
   background: #fff !important;
   margin: 0 !important;
@@ -57,9 +57,9 @@
   form.id = 'userjs-add_google';
   form.style.opacity = 0;
   form.innerHTML = `
-<form action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
+<form id="userjs-add_google_form" action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
   <span id="userjs-add_google_del">&times;</span>
-  <input type="text" name="q" placeholder="${document.domain} を検索" />
+  <input id="userjs-add_google_input" type="text" name="q" placeholder="${document.domain} を検索" />
   <input type="hidden" name="sitesearch" value="${document.domain}" />
   <input type="hidden" name="safe" value="off" />
 </form>`;
