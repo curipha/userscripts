@@ -60,7 +60,7 @@
     'packages.(debian|ubuntu).org/',
 
     // Mirror
-    'wpedia.goo.ne.jp/',
+    'wpedia.goo.ne.jp/', 'sssslide.com/',
 
     // Mobile pages
     'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
