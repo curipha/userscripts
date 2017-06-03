@@ -13,7 +13,7 @@
 
   const block = [
     // General doorways
-    'ceron.jp/', 'page2rss.com/', 'zenback.itmedia.co.jp/', 'hatebu-graph.com/',
+    'ceron.jp/', 'page2rss.com/', 'hatebu-graph.com/',
     'b.hatena.ne.jp/', 'web.kamel.io/',
     '[^/]+.s.hatena.ne.jp/',
 
@@ -27,7 +27,6 @@
     // SNS doorways
     '([^/]+.)?favstar.fm/',
     '([^/]+.)?twilog.org/',
-    '([^/]+.)?tw(ee|tr|it(?!ter))[^/.]+.[a-z]+/', // genocide...
 
     // Knowledge communities
     'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
