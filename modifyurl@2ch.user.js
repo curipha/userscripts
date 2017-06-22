@@ -23,7 +23,7 @@
       "'" : '&#039;'
     };
 
-    return str.replace(/[&<>"']/g, function(m) { return conv[m]; });
+    return str.replace(/[&<>"']/g, m => conv[m]);
   };
 
   // Remove intermediate link
@@ -31,7 +31,7 @@
   const pattern = /^http:\/\/(?:jump\.2ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
 
   for (let a of anchor) {
-    a.href = a.href.replace(pattern, function(m, p1) { return p1 ? p1 : 'http://'; } );
+    a.href = a.href.replace(pattern, (m, p1) => (p1 ? p1 : 'http://'));
   }
 
   // Linkification
@@ -42,10 +42,8 @@
 
   for (let d of res) {
     d.innerHTML = d.innerHTML.replace(
-                                ttp,
-                                function(m, p1, p2) {
-                                  return `${p1}<a href="${encodeURI('h'+p2)}" target="_blank">${escapeHTML(p2)}</a>`;
-                                }
-                              );
+      ttp,
+      (m, p1, p2) => `${p1}<a href="${encodeURI('h'+p2)}" target="_blank">${escapeHTML(p2)}</a>`
+    );
   }
 })();
