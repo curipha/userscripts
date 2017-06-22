@@ -16,4 +16,8 @@ rules:
   semi:
     - error
     - always
+  no-else-return: error
+  no-useless-return: error
+  no-lonely-if: error
+  no-var: error
 
