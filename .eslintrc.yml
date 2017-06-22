@@ -16,6 +16,9 @@ rules:
   semi:
     - error
     - always
+  eqeqeq:
+    - error
+    - always
   no-else-return: error
   no-useless-return: error
   no-lonely-if: error
