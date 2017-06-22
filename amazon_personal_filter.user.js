@@ -40,8 +40,8 @@
           if (pattern.test(gettitle(title).trim())) {
             item.style.opacity = opacity;
           }
-          else {
-            if (item.style.opacity == opacity) item.style.opacity = 1;
+          else if (item.style.opacity == opacity) {
+            item.style.opacity = 1;
           }
         }
       }
