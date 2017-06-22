@@ -18,7 +18,6 @@
     const a = document.body.querySelector('center a[href*="black-curtain-redirect.html"]');
     if (a)  {
       location.href = a.href;
-      return;
     }
   }
 })();
