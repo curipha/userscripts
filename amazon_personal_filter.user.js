@@ -6,7 +6,7 @@
 // @exclude        https://www.amazon.co.jp/ap/*
 // @exclude        https://www.amazon.co.jp/mn/*
 // @exclude        https://www.amazon.co.jp/clouddrive*
-// @version        0.1.8
+// @version        0.1.9
 // @grant          none
 // @noframes
 // ==/UserScript==
