@@ -30,7 +30,7 @@
   const pattern = new RegExp('(' + block.join('|') + ')', 'u');
 
   const opaque = function(list_selector, item_selector, title_func) {
-    const gettitle = title_func || (function(elem) { return elem.getAttribute('title') || elem.textContent; });
+    const gettitle = title_func || (elem => (elem.getAttribute('title') || elem.textContent));
 
     return function() {
       const result = document.body.querySelectorAll(list_selector);
