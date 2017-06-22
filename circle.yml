@@ -6,4 +6,4 @@ dependencies:
     - npm install --global eslint
 test:
   override:
-    - eslint ./
+    - eslint ./*.js
