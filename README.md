@@ -20,7 +20,6 @@ Notes for editing the URI/domains on the block list.
 - Add `/` at the tail to avoid false positives
 
 ### _export.sh
-Run this script to export all user script files stored in Firefox's user profile directory.
-
+Run this script to export all userscripts stored in Firefox's user profile directory.
 It works for **Firefox on Windows only**.
 
