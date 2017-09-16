@@ -2,20 +2,24 @@ userscripts
 ====================
 [![CircleCI](https://circleci.com/gh/curipha/userscripts.svg?style=svg)](https://circleci.com/gh/curipha/userscripts)
 
-These user scripts are for Greasemonkey on Firefox.
+Various userscripts to enhance browsing experience.
 
-Maybe they can run fine on Google Chrome, Scriptish on Firefox and/or other modern browsers/extensions.
+These userscripts works fine on:
+
+- Greasemonkey with Firefox
+- Tampermonkey with Google Chrome
+- ... and also other modern browsers/extensions
 
 
-Remarks
+Descriptions
 --------------------
 ### google_personal_blocklist.user.js
-There are some notes for adding the new URI/domains to the list:
+Notes for editing the URI/domains on the block list.
 
-- Write in modified regular expression
+- Use regular expression
   - `.` and `/` is parsed AS-IS (No escaping is needed)
 - Snip off `http://` or `https://` at the beginning of URI
-- Last `/` prevents to false positive
+- Add `/` at the tail to avoid false positives
 
 ### _export.sh
 Run this script to export all user script files stored in Firefox's user profile directory.
