@@ -4,7 +4,7 @@ userscripts
 
 Various userscripts to enhance browsing experience.
 
-These userscripts works fine on:
+These userscripts work fine on:
 
 - Greasemonkey with Firefox
 - Tampermonkey with Google Chrome
