@@ -1,7 +1,5 @@
-userscripts
+userscripts [![CircleCI](https://circleci.com/gh/curipha/userscripts.svg?style=svg)](https://circleci.com/gh/curipha/userscripts)
 ====================
-[![CircleCI](https://circleci.com/gh/curipha/userscripts.svg?style=svg)](https://circleci.com/gh/curipha/userscripts)
-
 Various userscripts to enhance browsing experience.
 
 These userscripts work fine on:
