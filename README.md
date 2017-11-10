@@ -23,3 +23,10 @@ Notes for editing the URI/domains on the block list.
 Run this script to export all userscripts stored in Firefox's user profile directory.
 It works for **Firefox on Windows only**.
 
+### _export.rb
+Run this script to convert Tampermonkey exported JSON file to standard `user.js` files.
+
+```bash
+$ ./_export.rb ./path/to/tampermonkey-backup-chrome-yyyy-mm-ddThh_mm_ss.sssZ.txt
+```
+
