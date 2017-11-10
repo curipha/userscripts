@@ -32,4 +32,3 @@
   // Go to bottom of page
   window.scrollTo(0, document.body.scrollHeight);
 })();
-
