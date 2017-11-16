@@ -4,7 +4,6 @@ Various userscripts to enhance browsing experience.
 
 These userscripts work fine with modern web browsers/extensions.
 
-e.g.
 - [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) with Google Chrome
 - [Greasemonkey](https://addons.mozilla.org/ja/firefox/addon/greasemonkey/) with Firefox
 
