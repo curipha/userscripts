@@ -8,7 +8,7 @@
 // @match          https://*.5ch.net/*
 // @match          http://*.bbspink.com/*
 // @match          https://*.bbspink.com/*
-// @version        0.2.4
+// @version        0.2.5
 // @grant          none
 // @noframes
 // ==/UserScript==
