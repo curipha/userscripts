@@ -2,14 +2,14 @@ userscripts [![CircleCI](https://circleci.com/gh/curipha/userscripts.svg?style=s
 ====================
 Various userscripts to enhance browsing experience.
 
-These userscripts work fine on:
+These userscripts work fine with modern web browsers/extensions.
 
-- Greasemonkey with Firefox
-- Tampermonkey with Google Chrome
-- ... and also other modern browsers/extensions
+e.g.
+- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) with Google Chrome
+- [Greasemonkey](https://addons.mozilla.org/ja/firefox/addon/greasemonkey/) with Firefox
 
 
-Descriptions
+Notes
 --------------------
 ### google_personal_blocklist.user.js
 Notes for editing the URI/domains on the block list.
@@ -18,10 +18,6 @@ Notes for editing the URI/domains on the block list.
   - `.` and `/` is parsed AS-IS (No escaping is needed)
 - Snip off `http://` or `https://` at the beginning of URI
 - Add `/` at the tail to avoid false positives
-
-### _export.sh
-Run this script to export all userscripts stored in Firefox's user profile directory.
-It works for **Firefox on Windows only**.
 
 ### _export.rb
 Run this script to convert Tampermonkey exported JSON file to standard `user.js` files.
