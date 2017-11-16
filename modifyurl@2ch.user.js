@@ -4,6 +4,8 @@
 // @description    Modify texts starting with "ttp://" to anchor and redirect URIs to direct link
 // @match          http://*.2ch.net/*
 // @match          https://*.2ch.net/*
+// @match          http://*.5ch.net/*
+// @match          https://*.5ch.net/*
 // @match          http://*.bbspink.com/*
 // @match          https://*.bbspink.com/*
 // @version        0.2.4
@@ -28,7 +30,7 @@
 
   // Remove intermediate link
   const anchor  = document.getElementsByTagName('a');
-  const pattern = /^http:\/\/(?:jump\.2ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
+  const pattern = /^http:\/\/(?:jump\.[25]ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
 
   for (let a of anchor) {
     a.href = a.href.replace(pattern, (m, p1) => (p1 ? p1 : 'http://'));
