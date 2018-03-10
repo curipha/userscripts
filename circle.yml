@@ -1,9 +1,0 @@
-machine:
-  node:
-    version: 8.2.0
-dependencies:
-  override:
-    - npm install --global eslint
-test:
-  override:
-    - eslint ./*.js
