@@ -26,7 +26,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2048;
+  z-index: 20000;
 }
 #userjs-add_google_form {
   margin: 0 !important;
