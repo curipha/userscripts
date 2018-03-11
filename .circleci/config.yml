@@ -22,5 +22,8 @@ jobs:
           name: Node.js version
           command: node --version
       - run:
+          name: ESLint version
+          command: eslint --version
+      - run:
           name: Run ESLint
           command: eslint ./*.js
