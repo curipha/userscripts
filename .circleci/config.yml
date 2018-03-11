@@ -2,12 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:latest
+      - image: node:latest
     steps:
       - checkout
       - run:
           name: Install ESLint
-          command: sudo npm install --global eslint
+          command: npm install --global eslint
       - run:
           name: System information
           command: uname -a
