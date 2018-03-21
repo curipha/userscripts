@@ -56,7 +56,7 @@
     'systemexplorer.net/', '[^/]+.dll-files.com/',
 
     // Linux package listing
-    'packages.(debian|ubuntu).org/',
+    'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror
     'wpedia.goo.ne.jp/', 'sssslide.com/',
