@@ -16,7 +16,10 @@ jobs:
             - ./package-lock.json
           key: eslint-application-{{ checksum "./package-lock.json" }}
       - run:
-          name: System information
+          name: OS release
+          command: cat /etc/debian_version
+      - run:
+          name: Kernel version
           command: uname -a
       - run:
           name: Node.js version
