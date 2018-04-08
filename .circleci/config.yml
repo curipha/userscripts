@@ -4,17 +4,17 @@ jobs:
     docker:
       - image: node:latest
     steps:
+      - checkout
       - restore_cache:
           key: eslint-application
       - run:
           name: Install ESLint
-          command: npm install --global eslint
+          command: npm install eslint
       - save_cache:
           paths:
-            - /usr/local/bin/eslint
-            - /usr/local/lib/node_modules
-          key: eslint-application-{{ checksum "/usr/local/lib/node_modules/eslint/package.json" }}
-      - checkout
+            - ./node_modules
+            - ./package-lock.json
+          key: eslint-application-{{ checksum "./package-lock.json" }}
       - run:
           name: System information
           command: uname -a
@@ -23,7 +23,7 @@ jobs:
           command: node --version
       - run:
           name: ESLint version
-          command: eslint --version
+          command: ./node_modules/.bin/eslint --version
       - run:
           name: Run ESLint
-          command: eslint ./*.js
+          command: ./node_modules/.bin/eslint -- ./*.js
