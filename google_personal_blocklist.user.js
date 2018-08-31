@@ -58,8 +58,8 @@
     // Linux package listing
     'packages.(debian|ubuntu).(com|org)/',
 
-    // Mirror
-    'wpedia.goo.ne.jp/', 'sssslide.com/',
+    // Mirror & Copy
+    'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com', 'code-examples.net/',
 
     // Mobile pages
     'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
