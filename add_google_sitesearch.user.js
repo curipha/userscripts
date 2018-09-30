@@ -18,38 +18,37 @@
 
   const css = `
 #userjs-add_google {
-  background: #ddd;
-  padding: 10px;
+  all: initial;
+  background: #555;
   font: 18px/1 sans-serif;
   min-width: 200px;
-  border: 2px solid #ccc;
+  border: 4px solid #555;
+  border-radius: 4px;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 20000;
 }
 #userjs-add_google_form {
-  margin: 0 !important;
-  padding: 0 !important;
+  all: initial;
+  margin: 0;
+  padding: 0;
 }
 #userjs-add_google_input {
-  font: 18px monospace !important;
-  background: #fff !important;
-  margin: 0 !important;
-  padding: 0.3em !important;
-  border: 0 none !important;
-  border-radius: 0 !important;
-  outline: 0 none !important;
-  box-shadow: none !important;
-  display: inline !important;
-  width: 14em !important;
-  height: auto !important;
+  all: initial;
+  font: 18px/1 monospace;
+  background: #eee;
+  margin: 0;
+  padding: 5px;
+  border-radius: 2px;
+  width: 14em;
+  height: auto;
 }
 #userjs-add_google_del {
-  color: #000 !important;
-  font: bold 24px sans-serif !important;
-  margin-right: 8px !important;
-  cursor: pointer !important;
+  all: initial;
+  color: #ccc;
+  font: bold 18px/1 sans-serif;
+  cursor: pointer;
 }`;
   GM_addStyle(css);
 
