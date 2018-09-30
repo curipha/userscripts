@@ -59,7 +59,7 @@
   form.innerHTML = `
 <form id="userjs-add_google_form" action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
   <span id="userjs-add_google_del">&times;</span>
-  <input id="userjs-add_google_input" type="search" name="q" placeholder="${document.domain} を検索" />
+  <input id="userjs-add_google_input" type="search" name="q" placeholder="&#x1f50e ${document.domain}" />
   <input type="hidden" name="sitesearch" value="${document.domain}" />
   <input type="hidden" name="safe" value="off" />
 </form>`;
