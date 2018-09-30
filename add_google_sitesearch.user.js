@@ -69,6 +69,6 @@
   form.addEventListener('mouseenter', toggle_opacity, false);
   form.addEventListener('mouseleave', toggle_opacity, false);
 
-  const hidden = function() { document.getElementById('userjs-add_google').style.visibility = 'hidden'; };
+  const hidden = function() { document.body.removeChild(form) };
   document.getElementById('userjs-add_google_del').addEventListener('click', hidden, false);
 })();
