@@ -23,6 +23,7 @@
     'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/',
     '(?!news)[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
+    '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
 
     // SNS doorways
     '([^/]+.)?favstar.fm/',
