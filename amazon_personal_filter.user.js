@@ -49,21 +49,19 @@
     };
   };
 
-  const mo = [];
+  const observe = function(area_id, list_selector, item_selector) {
+    const area = document.getElementById(area_id);
+    if (area) {
+      const mo = new MutationObserver(opaque(`#${area_id} ${list_selector}`, item_selector));
+      mo.observe(area, { childList: true, subtree: true });
+    }
+  }
+
 
   // Search result
-  if (document.getElementById('searchTemplate')) {
-    mo.push(new MutationObserver(opaque('#searchTemplate .s-result-item', 'h2')));
-  }
-  if (document.getElementById('mainResults')) {
-    mo.push(new MutationObserver(opaque('#mainResults [id^="result_"]', 'h3 .lrg')));
-  }
+  observe('searchTemplate', '.s-result-item', 'h2');
+  observe('mainResults', '[id^="result_"]', 'h3 .lrg');
 
   // Best sellers
-  if (document.getElementById('zg_col1')) {
-    mo.push(new MutationObserver(opaque('#zg_col1 .zg_item_compact', '.p13n-sc-truncated')));
-  }
-
-
-  mo.map(function(m) { m.observe(document.body, { childList: true, subtree: true }); });
+  observe('zg_col1', '.zg_item_compact', '.p13n-sc-truncated');
 })();
