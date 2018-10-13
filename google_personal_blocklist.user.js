@@ -74,7 +74,7 @@
   const blocker = function() {
     const result = document.getElementsByClassName('g');
     for (let li of result) {
-      const a = li.querySelector('h3 > a[href]');
+      const a = li.querySelector('.rc > .r > a[href]');
       if (!a) continue;
 
       if (pattern.test(a.href)) li.style.opacity = opacity;
