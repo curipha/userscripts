@@ -29,10 +29,10 @@
   };
 
   // Remove intermediate link
-  const anchor  = document.getElementsByTagName('a');
+  const anchors = document.getElementsByTagName('a');
   const pattern = /^http:\/\/(?:jump\.[25]ch\.net|(?:www\.)?pinktower\.com)\/\?(https?:\/\/)?/i;
 
-  for (let a of anchor) {
+  for (let a of anchors) {
     a.href = a.href.replace(pattern, (m, p1) => (p1 ? p1 : 'http://'));
   }
 
