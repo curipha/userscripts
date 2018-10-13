@@ -75,9 +75,9 @@
     const result = document.getElementsByClassName('g');
     for (let li of result) {
       const a = li.querySelector('.rc > .r > a[href]');
-      if (!a) continue;
-
-      if (pattern.test(a.href)) li.style.opacity = opacity;
+      if (a && pattern.test(a.href)) {
+        li.style.opacity = opacity;
+      }
     }
   };
   const blocker_wrap = function() {
