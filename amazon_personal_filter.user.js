@@ -55,7 +55,7 @@
       const mo = new MutationObserver(opaque(`#${area_id} ${list_selector}`, item_selector));
       mo.observe(area, { childList: true, subtree: true });
     }
-  }
+  };
 
 
   // Search result
