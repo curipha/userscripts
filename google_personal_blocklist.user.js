@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Google personal blocklist
 // @namespace      curipha
-// @description    Obscure annoying sites from search result
+// @description    Obscure annoying pages from search result
 // @include        https://www.google.tld/search?*
 // @version        0.3.4
 // @grant          none
