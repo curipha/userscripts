@@ -69,26 +69,11 @@
   const opacity = 0.2;
   const pattern = new RegExp('^https?://(?:' + block.join('|').replace(/([./])/g, '\\$1') + ')', 'i');
 
-  let t = 0;
-
-  const blocker = function() {
-    const result = document.getElementsByClassName('g');
-    for (let li of result) {
-      const a = li.querySelector('.rc > .r > a[href]');
-      if (a && pattern.test(a.href)) {
-        li.style.opacity = opacity;
-      }
+  const result = document.getElementsByClassName('g');
+  for (let li of result) {
+    const a = li.querySelector('.rc > .r > a[href]');
+    if (a && pattern.test(a.href)) {
+      li.style.opacity = opacity;
     }
-  };
-  const blocker_wrap = function() {
-    if (t) return;
-    t = setTimeout(function() {
-      blocker();
-      t = 0;
-    }, 120);
-  };
-
-  blocker();
-
-  (new MutationObserver(blocker_wrap)).observe(document.body, { childList: true, subtree: true });
+  }
 })();
