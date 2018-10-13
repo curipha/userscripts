@@ -64,6 +64,9 @@
 </form>`;
   document.body.appendChild(form);
 
+  const stop_event = function(event) { event.stopImmediatePropagation(); };
+  document.getElementById('userjs-add_google_input').addEventListener('keydown', stop_event, true);
+
   const toggle_opacity = function() { this.style.opacity ^= 1; };
   form.addEventListener('mouseenter', toggle_opacity, false);
   form.addEventListener('mouseleave', toggle_opacity, false);
