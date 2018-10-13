@@ -32,15 +32,13 @@
   const opacity = 0.2;
   const pattern = new RegExp('(' + block.join('|') + ')', 'u');
 
-  const opaque = function(list_selector, item_selector, title_func) {
-    const gettitle = title_func || (elem => (elem.getAttribute('title') || elem.textContent));
-
+  const opaque = function(list_selector, item_selector) {
     return function() {
       const result = document.body.querySelectorAll(list_selector);
       for (let item of result) {
         const title = item.querySelector(item_selector);
         if (title) {
-          if (pattern.test(gettitle(title).trim())) {
+          if (pattern.test((title.getAttribute('title') || title.textContent).trim())) {
             item.style.opacity = opacity;
           }
           else if (item.style.opacity === opacity) {
