@@ -2,7 +2,9 @@
 // @name           Display price history on Amazon.co.jp
 // @namespace      curipha
 // @description    Import price history from Keepa.com
-// @include        https://www.amazon.co.jp/*
+// @include        https://www.amazon.co.jp/gp/product/*
+// @include        https://www.amazon.co.jp/dp/*
+// @include        https://www.amazon.co.jp/*/dp/*
 // @exclude        https://www.amazon.co.jp/ap/*
 // @exclude        https://www.amazon.co.jp/mn/*
 // @exclude        https://www.amazon.co.jp/clouddrive*
