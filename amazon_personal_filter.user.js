@@ -2,10 +2,9 @@
 // @name           Amazon personal filter
 // @namespace      curipha
 // @description    Obscure annoying contents from search result and best sellers
-// @include        https://www.amazon.co.jp/*
-// @exclude        https://www.amazon.co.jp/ap/*
-// @exclude        https://www.amazon.co.jp/mn/*
-// @exclude        https://www.amazon.co.jp/clouddrive*
+// @include        https://www.amazon.co.jp/gp/bestsellers/*
+// @include        https://www.amazon.co.jp/gp/search*
+// @include        https://www.amazon.co.jp/s/*
 // @version        0.2.0
 // @grant          none
 // @noframes
