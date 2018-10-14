@@ -5,7 +5,7 @@
 // @include        https://www.amazon.co.jp/gp/bestsellers/*
 // @include        https://www.amazon.co.jp/gp/search*
 // @include        https://www.amazon.co.jp/s/*
-// @version        0.2.0
+// @version        0.2.1
 // @grant          none
 // @noframes
 // ==/UserScript==
