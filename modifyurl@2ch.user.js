@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           Modify URL @2ch
+// @name           ModifyURL@2ch
 // @namespace      curipha
 // @description    Modify texts starting with "ttp://" to anchor and redirect URIs to direct link
 // @match          http://*.2ch.net/*
