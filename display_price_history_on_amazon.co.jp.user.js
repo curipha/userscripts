@@ -19,31 +19,58 @@
   const width = 580;
   const height = 240;
 
-  const pricediv = document.getElementById('unifiedPrice_feature_div');
-  if (pricediv) {
+  let current_asin = '';
+
+  const get_asin = function() {
     const asinform = document.getElementById('ASIN'); // or location.pathname.match(/\b[0-9A-Z]{10}\b/)
-    if (asinform) {
-      const asin = asinform.value;
+    return asinform ? asinform.value : null;
+  }
 
-      const history = document.createElement('div');
-      history.className = 'a-section a-spacing-small';
+  const insert_graph = function() {
+    const pricediv = document.getElementById('unifiedPrice_feature_div');
+    if (pricediv) {
+      let asin = get_asin();
+      if (asin) {
+        current_asin = asin; // Update current asin value to avoid consecutive updating of graph
 
-      const anchor = document.createElement('a');
-      anchor.href = `https://keepa.com/#!product/5-${asin}`;
-      anchor.target = '_blank';
-      anchor.rel = 'noopener';
-      anchor.referrerPolicy = 'no-referrer';
+        const history = document.createElement('div');
+        history.className = 'a-section a-spacing-small';
 
-      const image = document.createElement('img');
-      image.src = `https://dyn.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}&width=${width}&height=${height}`;
-      image.alt = 'Price history';
-      image.width = width;
-      image.height = height;
-      image.referrerPolicy = 'no-referrer';
+        const anchor = document.createElement('a');
+        anchor.href = `https://keepa.com/#!product/5-${asin}`;
+        anchor.target = '_blank';
+        anchor.rel = 'noopener';
+        anchor.referrerPolicy = 'no-referrer';
 
-      anchor.appendChild(image);
-      history.appendChild(anchor);
-      pricediv.appendChild(history);
+        const image = document.createElement('img');
+        image.src = `https://dyn.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}&width=${width}&height=${height}`;
+        image.alt = 'Price history';
+        image.width = width;
+        image.height = height;
+        image.referrerPolicy = 'no-referrer';
+
+        anchor.appendChild(image);
+        history.appendChild(anchor);
+        pricediv.appendChild(history);
+      }
     }
+  }
+
+  insert_graph();
+
+
+  // Capture variation select and update the graph
+  const target = document.getElementById('desktop_buybox') || document.getElementById('buybox_feature_div');
+  if (target) {
+    const update_graph = (mutations) => {
+      mutations.forEach((mutation) => {
+        if (get_asin() !== current_asin && mutation.addedNodes.length > 0) {
+          insert_graph();
+        }
+      });
+    };
+
+    const mo = new MutationObserver(update_graph);
+    mo.observe(target, { childList: true });
   }
 })();
