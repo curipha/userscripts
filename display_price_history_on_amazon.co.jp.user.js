@@ -24,7 +24,7 @@
   const get_asin = function() {
     const asinform = document.getElementById('ASIN'); // or location.pathname.match(/\b[0-9A-Z]{10}\b/)
     return asinform ? asinform.value : null;
-  }
+  };
 
   const insert_graph = function() {
     const pricediv = document.getElementById('unifiedPrice_feature_div');
@@ -54,7 +54,7 @@
         pricediv.appendChild(history);
       }
     }
-  }
+  };
 
   insert_graph();
 
