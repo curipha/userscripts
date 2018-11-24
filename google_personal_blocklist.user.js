@@ -31,7 +31,7 @@
 
     // Knowledge communities
     'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
-    'www.itmedia.co.jp/qa/',
+    'www.itmedia.co.jp/qa/', 'qa.itmedia.co.jp/',
     'oshiete1?.(nifty.com|goo.ne.jp)/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
 
