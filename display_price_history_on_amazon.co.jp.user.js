@@ -64,7 +64,7 @@
   if (target) {
     const update_graph = (mutations) => {
       mutations.forEach((mutation) => {
-        if (get_asin() !== current_asin && mutation.addedNodes.length > 0) {
+        if (mutation.addedNodes.length > 0 && get_asin() !== current_asin) {
           insert_graph();
         }
       });
