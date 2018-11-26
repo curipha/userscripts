@@ -46,7 +46,7 @@
   const opacity = 0.2;
   const pattern = new RegExp(`(${block.join('|')}|${label.map(v => `\\(${v}\\)$`).join('|')})`, 'u');
 
-  const opaque = function(list_selector, item_selector) {
+  const opaque = (list_selector, item_selector) => {
     return function() {
       const result = document.body.querySelectorAll(list_selector);
       for (let item of result) {
@@ -63,7 +63,7 @@
     };
   };
 
-  const observe = function(area_id, list_selector, item_selector) {
+  const observe = (area_id, list_selector, item_selector) => {
     const area = document.getElementById(area_id);
     if (area) {
       const mo = new MutationObserver(opaque(`#${area_id} ${list_selector}`, item_selector));
