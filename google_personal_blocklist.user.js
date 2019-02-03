@@ -60,7 +60,7 @@
     'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror & Copy
-    'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com/', 'code-examples.net/',
+    'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com/', 'code-examples.net/', '([^/]+.)?stackovernet.com/',
 
     // Mobile pages
     'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
