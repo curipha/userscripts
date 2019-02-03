@@ -59,6 +59,11 @@
             item.style.opacity = 1;
           }
         }
+
+        const spprod = item.querySelector('a[href^="/gp/slredirect/"] > h2');
+        if (spprod) {
+          item.style.opacity = opacity;
+        }
       }
     };
   };
