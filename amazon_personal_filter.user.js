@@ -79,7 +79,7 @@
 
   // Search result
   observe('searchTemplate', '.s-result-item', 'h2');
-  observe('mainResults', '[id^="result_"]', 'h3 .lrg');
+  //observe('mainResults', '[id^="result_"]', 'h3 .lrg');
 
   // Best sellers
   observe('zg_col1', '.zg_item_compact', '.p13n-sc-truncated');
