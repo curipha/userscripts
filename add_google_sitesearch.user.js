@@ -7,7 +7,7 @@
 // @exclude        https://*.google.tld/*
 // @exclude        https://*.amazon.tld/*
 // @version        0.2.6
-// @grant          GM_addStyle
+// @grant          none
 // @noframes
 // ==/UserScript==
 
@@ -16,7 +16,9 @@
 
   if (document.contentType !== 'text/html') return;
 
-  const css = `
+  const style = document.createElement('style');
+  style.type = 'text/css';
+  style.textContent = `
 #userjs-add_google {
   all: initial;
   background: #555;
@@ -50,7 +52,7 @@
   font: bold 18px/1 sans-serif;
   cursor: pointer;
 }`;
-  GM_addStyle(css);
+  document.head.appendChild(style);
 
   const form = document.createElement('div');
   form.id = 'userjs-add_google';
