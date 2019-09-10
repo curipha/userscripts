@@ -59,7 +59,8 @@
           }
         }
 
-        const spprod = item.querySelector('a[href^="/gp/slredirect/"] > h2');
+        // Hide sponser product (Only for search result pages)
+        const spprod = item.querySelector('h2 > a[href^="/gp/slredirect/"]');
         if (spprod) {
           item.style.opacity = opacity;
         }
@@ -77,8 +78,7 @@
 
 
   // Search result
-  observe('searchTemplate', '.s-result-item', 'h2');
-  //observe('mainResults', '[id^="result_"]', 'h3 .lrg');
+  observe('search', '.s-result-item', 'h2');
 
   // Best sellers
   observe('zg_col1', '.zg_item_compact', '.p13n-sc-truncated');
