@@ -3,8 +3,7 @@
 // @namespace      curipha
 // @description    Obscure annoying contents from search result and best sellers
 // @include        https://www.amazon.co.jp/gp/bestsellers/*
-// @include        https://www.amazon.co.jp/gp/search*
-// @include        https://www.amazon.co.jp/s/*
+// @include        https://www.amazon.co.jp/s*
 // @version        0.2.2
 // @grant          none
 // @noframes
