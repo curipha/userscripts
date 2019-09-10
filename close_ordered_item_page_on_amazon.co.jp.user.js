@@ -4,6 +4,7 @@
 // @description    Close ordered item page automatically
 // @include        https://www.amazon.co.jp/dp/*
 // @include        https://www.amazon.co.jp/*/dp/*
+// @include        https://www.amazon.co.jp/gp/product/*
 // @exclude        https://www.amazon.co.jp/ap/*
 // @exclude        https://www.amazon.co.jp/mn/*
 // @exclude        https://www.amazon.co.jp/clouddrive*
