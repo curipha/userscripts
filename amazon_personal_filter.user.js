@@ -81,5 +81,5 @@
   observe('search', '.s-result-item', 'h2');
 
   // Best sellers
-  observe('zg_col1', '.zg_item_compact', '.p13n-sc-truncated');
+  observe('zg', '.zg-item-immersion', '.p13n-sc-truncated');
 })();
