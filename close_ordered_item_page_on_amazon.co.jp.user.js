@@ -2,11 +2,11 @@
 // @name           Close ordered item page on Amazon.co.jp
 // @namespace      curipha
 // @description    Close ordered item page automatically
+// @include        https://www.amazon.co.jp/gp/product/*
 // @include        https://www.amazon.co.jp/dp/*
 // @include        https://www.amazon.co.jp/*/dp/*
-// @include        https://www.amazon.co.jp/gp/product/*
 // @exclude        https://www.amazon.co.jp/ap/*
-// @exclude        https://www.amazon.co.jp/mn/*
+// @exclude        https://www.amazon.co.jp/hz/*
 // @exclude        https://www.amazon.co.jp/clouddrive*
 // @version        0.0.2
 // @grant          none
