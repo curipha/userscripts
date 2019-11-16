@@ -3,11 +3,8 @@
 require 'json'
 require 'base64'
 
-abort "Usage: #{$0} <exported JSON file>" if ARGV.count < 1
-
-file = ARGV.first
-abort "JSON file does not exist: #{file}" unless File.exist?(file)
-
+file = ARGV.first || Dir.glob(File.expand_path('~/Desktop/tampermonkey-backup-*.txt')).first
+abort 'JSON file does not exist.' if file.nil? || !File.exist?(file)
 
 json = JSON.load(File.read(file))
 
@@ -19,3 +16,4 @@ json['scripts'].each do |js|
   end
 end
 
+File.delete(file)
