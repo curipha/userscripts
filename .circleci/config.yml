@@ -2,11 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:latest
+      - image: node:alpine
     steps:
       - checkout
       - restore_cache:
-          key: eslint-application
+          key: eslint-alpine
       - run:
           name: Install ESLint
           command: npm install eslint
@@ -14,13 +14,10 @@ jobs:
           paths:
             - ./node_modules
             - ./package-lock.json
-          key: eslint-application-{{ checksum "./package-lock.json" }}
+          key: eslint-alpine-{{ checksum "./package-lock.json" }}
       - run:
           name: OS release
-          command: cat /etc/debian_version
-      - run:
-          name: Kernel version
-          command: uname -a
+          command: cat /etc/os-release
       - run:
           name: Node.js version
           command: node --version
