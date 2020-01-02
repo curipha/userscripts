@@ -23,7 +23,6 @@
   all: initial;
   background: #555;
   font: 18px/1 sans-serif;
-  min-width: 200px;
   border: 4px solid #555;
   border-radius: 4px;
   position: fixed;
