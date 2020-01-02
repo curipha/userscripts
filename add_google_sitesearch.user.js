@@ -47,7 +47,7 @@
   margin: 0;
   padding: 5px;
   border-radius: 2px;
-  width: 1em;
+  width: calc(1em + 5px);
   height: auto;
   transition: width 80ms;
 }
