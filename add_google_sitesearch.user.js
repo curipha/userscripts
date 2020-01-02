@@ -29,6 +29,11 @@
   top: 0;
   right: 0;
   z-index: 20000;
+  opacity: 0;
+  transition: opacity 80ms;
+}
+#userjs-add_google:hover {
+  opacity: 1;
 }
 #userjs-add_google_form {
   all: initial;
@@ -42,8 +47,12 @@
   margin: 0;
   padding: 5px;
   border-radius: 2px;
-  width: 14em;
+  width: 1em;
   height: auto;
+  transition: width 80ms;
+}
+#userjs-add_google_input:hover {
+  width: 14em;
 }
 #userjs-add_google_del {
   all: initial;
@@ -55,7 +64,6 @@
 
   const form = document.createElement('div');
   form.id = 'userjs-add_google';
-  form.style.opacity = 0;
   form.innerHTML = `
 <form id="userjs-add_google_form" action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
   <span id="userjs-add_google_del">&times;</span>
@@ -67,10 +75,6 @@
 
   const stop_event = function(event) { event.stopImmediatePropagation(); };
   document.getElementById('userjs-add_google_input').addEventListener('keydown', stop_event, true);
-
-  const toggle_opacity = function() { this.style.opacity ^= 1; };
-  form.addEventListener('mouseenter', toggle_opacity, false);
-  form.addEventListener('mouseleave', toggle_opacity, false);
 
   const hidden = function() { document.body.removeChild(form); };
   document.getElementById('userjs-add_google_del').addEventListener('click', hidden, false);
