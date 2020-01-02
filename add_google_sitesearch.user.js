@@ -62,20 +62,20 @@
 }`;
   document.head.appendChild(style);
 
-  const form = document.createElement('div');
-  form.id = 'userjs-add_google';
-  form.innerHTML = `
+  const div = document.createElement('div');
+  div.id = 'userjs-add_google';
+  div.innerHTML = `
 <form id="userjs-add_google_form" action="https://www.google.com/search" method="get" accept-charset="UTF-8" target="_top">
   <span id="userjs-add_google_del">&times;</span>
   <input id="userjs-add_google_input" type="search" name="q" placeholder="&#x1f50e ${document.domain}" />
   <input type="hidden" name="sitesearch" value="${document.domain}" />
   <input type="hidden" name="safe" value="off" />
 </form>`;
-  document.body.appendChild(form);
+  document.body.appendChild(div);
 
   const stop_event = function(event) { event.stopImmediatePropagation(); };
   document.getElementById('userjs-add_google_input').addEventListener('keydown', stop_event, true);
 
-  const hidden = function() { document.body.removeChild(form); };
+  const hidden = function() { document.body.removeChild(div); };
   document.getElementById('userjs-add_google_del').addEventListener('click', hidden, false);
 })();
