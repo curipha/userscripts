@@ -14,8 +14,7 @@
 (function(){
   'use strict';
 
-  if (!document || !document.head || !document.body) return;
-  if (document.contentType !== 'text/html') return;
+  if (!document || !document.head || !document.body || document.contentType !== 'text/html') return;
 
   const style = document.createElement('style');
   style.type = 'text/css';
