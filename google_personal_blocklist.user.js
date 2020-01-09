@@ -61,7 +61,7 @@
 
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com/', 'code-examples.net/',
-    'stackoverrun.com/', 'kotaeta.com/', 'codeday.me/',
+    'stackoverrun.com/', 'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/',
     '([^/]+.)?stackovernet.com/',
 
     // Mobile pages
