@@ -31,7 +31,7 @@
 
     // Knowledge communities
     'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
-    'www.itmedia.co.jp/qa/', 'qa.itmedia.co.jp/',
+    'www.itmedia.co.jp/qa/', 'qa.itmedia.co.jp/', 'answers.microsoft.com/',
     'oshiete1?.(nifty.com|goo.ne.jp)/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
 
@@ -40,7 +40,6 @@
 
     // EC
     '(e?search|item).rakuten.co.jp/',
-    '([^/]+.)?.animate-onlineshop.jp/',
 
     // Community
     'www.nicovideo.jp/',
@@ -65,7 +64,7 @@
     '([^/]+.)?stackovernet.com/',
 
     // Mobile pages
-    'www.amazon.co.jp/gp/aw/', 'mobile.twitter.com/'
+    'mobile.twitter.com/',
   ];
 
   const opacity = 0.2;
