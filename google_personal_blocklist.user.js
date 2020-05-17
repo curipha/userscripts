@@ -60,7 +60,7 @@
 
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com/', 'code-examples.net/',
-    'stackoverrun.com/', 'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/',
+    'stackoverrun.com/', 'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'www.it-swarm.dev/',
     '([^/]+.)?stackovernet.com/',
 
     // Mobile pages
