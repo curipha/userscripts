@@ -43,7 +43,7 @@
         anchor.referrerPolicy = 'no-referrer';
 
         const image = document.createElement('img');
-        image.src = `https://dyn.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}&width=${width}&height=${height}`;
+        image.src = `https://graph.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}&width=${width}&height=${height}`;
         image.alt = 'Price history';
         image.width = width;
         image.height = height;
