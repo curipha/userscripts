@@ -6,7 +6,7 @@
 // @include        https://*
 // @exclude        https://*.google.tld/*
 // @exclude        https://*.amazon.tld/*
-// @version        0.3.2
+// @version        0.3.3
 // @grant          none
 // @noframes
 // ==/UserScript==
