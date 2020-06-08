@@ -28,7 +28,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 20000;
+  z-index: 200000;
   opacity: 0;
   transition: opacity 80ms;
 }
