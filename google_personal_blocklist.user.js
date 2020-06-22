@@ -13,8 +13,8 @@
 
   const block = [
     // General doorways
-    'ceron.jp/', 'page2rss.com/', 'hatebu-graph.com/',
-    'b.hatena.ne.jp/', 'web.kamel.io/',
+    'ceron.jp/', 'hatebu-graph.com/',
+    'b.hatena.ne.jp/',
     '[^/]+.s.hatena.ne.jp/',
 
     // Application doorways
@@ -26,7 +26,6 @@
     '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
 
     // SNS doorways
-    '([^/]+.)?favstar.fm/',
     '([^/]+.)?twilog.org/',
 
     // Knowledge communities
@@ -48,9 +47,6 @@
     'anime.dougasouko.com/',
     '([^/]+.)?anitube.se/',
     '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
-
-    // Torrents
-    '([^/]+.)?nyaa.se/',
 
     // Dll listing
     'systemexplorer.net/', '[^/]+.dll-files.com/',
