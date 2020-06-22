@@ -13,8 +13,7 @@
 
   const block = [
     // Social bookmarks
-    'ceron.jp/', 'hatebu-graph.com/',
-    'b.hatena.ne.jp/',
+    'ceron.jp/', 'b.hatena.ne.jp/', 'hatebu-graph.com/',
     '[^/]+.s.hatena.ne.jp/',
 
     // Application listings
@@ -22,8 +21,8 @@
     'download.cnet.com/',
     'www.vector.co.jp/soft/',
     '([^/]+.)?filehippo.com/',
-    '(?!news)[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
-    '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
+    '(?!news)[^/]+.soft(onic|pedia).(com|jp)/',
+    '[^/]+.uptodown.com/', '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
 
     // Twitter mirrors
     '([^/]+.)?twilog.org/',
@@ -55,8 +54,9 @@
     'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror & Copy
-    'wpedia.goo.ne.jp/', 'sssslide.com/', 'code.i-harness.com/', 'code-examples.net/',
-    'stackoverrun.com/', 'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'www.it-swarm.dev/',
+    'wpedia.goo.ne.jp/', 'sssslide.com/',
+    'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
+    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'www.it-swarm.dev/',
     'bugsdb.com/', 'qastack.jp/',
     '([^/]+.)?stackovernet.com/', '[^/]+.coder.work/',
 
