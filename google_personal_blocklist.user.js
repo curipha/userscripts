@@ -12,12 +12,12 @@
   'use strict';
 
   const block = [
-    // General doorways
+    // Social bookmarks
     'ceron.jp/', 'hatebu-graph.com/',
     'b.hatena.ne.jp/',
     '[^/]+.s.hatena.ne.jp/',
 
-    // Application doorways
+    // Application listings
     'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
     'download.cnet.com/',
     'www.vector.co.jp/soft/',
@@ -25,7 +25,7 @@
     '(?!news)[^/]+.soft(onic|pedia).(com|jp)/', '[^/]+.uptodown.com/',
     '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
 
-    // SNS doorways
+    // Twitter mirrors
     '([^/]+.)?twilog.org/',
 
     // Knowledge communities
@@ -48,10 +48,10 @@
     '([^/]+.)?anitube.se/',
     '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
 
-    // Dll listing
+    // DLL listings
     'systemexplorer.net/', '[^/]+.dll-files.com/',
 
-    // Linux package listing
+    // Linux package listings
     'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror & Copy
