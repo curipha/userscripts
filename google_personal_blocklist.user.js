@@ -54,7 +54,7 @@
     'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror & Copy
-    'wpedia.goo.ne.jp/', 'sssslide.com/',
+    'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
     'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
     'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'www.it-swarm.dev/',
     'bugsdb.com/', 'qastack.jp/',
@@ -62,6 +62,9 @@
 
     // Mobile pages
     'mobile.twitter.com/',
+
+    // Rubbish
+    'www.sejuku.net/',
   ];
 
   const opacity = 0.2;
