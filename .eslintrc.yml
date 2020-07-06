@@ -40,6 +40,9 @@ rules:
 
   consistent-return: error
 
+  prefer-const: warn
+  prefer-template: warn
+
   no-confusing-arrow: error
   no-else-return: error
   no-eq-null: error
