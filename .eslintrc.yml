@@ -21,7 +21,12 @@ rules:
     - error
     - always
 
+  no-confusing-arrow: error
   no-else-return: error
-  no-useless-return: error
+  no-eq-null: error
   no-lonely-if: error
+  no-shadow: error
+  no-unneeded-ternary: error
+  no-useless-concat: error
+  no-useless-return: error
   no-var: error
