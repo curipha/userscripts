@@ -11,15 +11,34 @@ rules:
   linebreak-style:
     - error
     - unix
+  max-depth:
+    - warn
+    - 3
   quotes:
     - warn
     - single
   semi:
     - error
     - always
+
+  comma-dangle:
+    - error
+    - always-multiline
+  operator-assignment:
+    - error
+    - always
+  quote-props:
+    - error
+    - as-needed
+
   eqeqeq:
     - error
     - always
+  yoda:
+    - error
+    - never
+
+  consistent-return: error
 
   no-confusing-arrow: error
   no-else-return: error
