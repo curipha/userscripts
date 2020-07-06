@@ -29,7 +29,7 @@
   const insert_graph = function() {
     const pricediv = document.getElementById('unifiedPrice_feature_div');
     if (pricediv) {
-      let asin = get_asin();
+      const asin = get_asin();
       if (asin) {
         current_asin = asin; // Update current asin value to avoid consecutive updating of graph
 

@@ -23,7 +23,7 @@
   const opaque = (list_selector, item_selector) => {
     return function() {
       const result = document.body.querySelectorAll(list_selector);
-      for (let item of result) {
+      for (const item of result) {
         const title = item.querySelector(item_selector);
         if (title) {
           if (pattern.test((title.getAttribute('title') || title.textContent).trim())) {

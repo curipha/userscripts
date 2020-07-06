@@ -71,7 +71,7 @@
   const pattern = new RegExp('^https?://(?:' + block.join('|').replace(/([./])/g, '\\$1') + ')', 'i');
 
   const result = document.getElementsByClassName('g');
-  for (let li of result) {
+  for (const li of result) {
     const a = li.querySelector('.rc > .r > a[href]');
     if (a && pattern.test(a.href)) {
       li.style.opacity = opacity;
