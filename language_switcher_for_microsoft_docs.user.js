@@ -16,7 +16,7 @@
     const [tolang, label] = location.pathname.substring(0,7) === '/en-us/' ? ['ja-jp', '日本語'] : ['en-us', 'English'];
 
     const anchor = document.createElement('a');
-    anchor.href = location.pathname.replace(/(?<=^\/)[A-Za-z0-9-]+(?=\/)/, tolang);
+    anchor.href = location.pathname.replace(/(?<=^\/)[A-Za-z0-9-]+(?=\/)/, tolang) + location.search;
     anchor.className = 'button is-small is-text has-inner-focus has-margin-bottom-small has-border-top has-border-bottom';
 
     const icon = document.createElement('span');
