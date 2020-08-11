@@ -56,7 +56,8 @@
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
     'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
-    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'www.it-swarm.dev/',
+    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/',
+    'www.it-swarm.dev/', 'www.it-swarm-ja.tech/',
     'bugsdb.com/', 'qastack.jp/',
     '([^/]+.)?stackovernet.com/', '[^/]+.coder.work/',
 
