@@ -4,6 +4,7 @@
 // @description    Obscure annoying contents from search result and best sellers
 // @include        https://www.amazon.co.jp/gp/bestsellers/*
 // @include        https://www.amazon.co.jp/s*
+// @include        https://www.amazon.co.jp/b*
 // @version        0.3.1
 // @grant          none
 // @noframes
