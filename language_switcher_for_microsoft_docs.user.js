@@ -31,7 +31,7 @@
     icon.appendChild(iconinner);
     anchor.appendChild(icon);
     anchor.appendChild(text);
-    nav.appendChild(anchor);
+    nav.prepend(anchor); // Insert 'anchor' node before the first child of the 'nav'
 
 
     const makehref = function() { this.href += location.hash; };
