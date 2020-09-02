@@ -3,7 +3,7 @@
 // @namespace      curipha
 // @description    Add language menu
 // @include        https://docs.microsoft.com/*
-// @version        0.0.2
+// @version        0.0.3
 // @grant          none
 // @noframes
 // ==/UserScript==
