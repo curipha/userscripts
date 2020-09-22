@@ -24,4 +24,3 @@ Run this script to convert Tampermonkey exported JSON file to standard `user.js`
 ```bash
 $ ./_export.rb ./path/to/tampermonkey-backup-chrome-yyyy-mm-ddThh_mm_ss.sssZ.txt
 ```
-
