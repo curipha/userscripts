@@ -73,7 +73,7 @@
 
   const result = document.getElementsByClassName('g');
   for (const li of result) {
-    const a = li.querySelector('.rc > .r > a[href]');
+    const a = li.querySelector('.rc a[href]');
     if (a && pattern.test(a.href)) {
       li.style.opacity = opacity;
     }
