@@ -56,9 +56,9 @@
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
     'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
-    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/',
-    'www.it-swarm.dev/', 'www.it-swarm-ja.tech/',
-    'bugsdb.com/', 'qastack.jp/',
+    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'python5.com/',
+    'www.it-swarm.dev/', 'www.it-swarm-ja.tech/', 'www.thinbug.com/',
+    'bugsdb.com/', 'qastack.jp/', 'www.366service.com/',
     '([^/]+.)?stackovernet.com/', '[^/]+.coder.work/',
 
     // Mobile pages
