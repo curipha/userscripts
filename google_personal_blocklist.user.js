@@ -40,7 +40,7 @@
   ];
 
   const opacity = 0.2;
-  const pattern = new RegExp('^https?://(?:' + block.join('|').replace(/([./])/g, '\\$1') + ')', 'i');
+  const pattern = new RegExp(`^https?://(?:${block.join('|').replace(/([./])/g, '\\$1')})`, 'i');
 
   const result = document.getElementsByClassName('g');
   for (const li of result) {
