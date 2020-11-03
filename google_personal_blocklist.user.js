@@ -13,45 +13,19 @@
 
   const block = [
     // Social bookmarks
-    'ceron.jp/', 'b.hatena.ne.jp/', 'hatebu-graph.com/',
+    'b.hatena.ne.jp/', 'hatebu-graph.com/',
     '[^/]+.s.hatena.ne.jp/',
 
-    // Application listings
-    'www.altech-ads.com/', 'www.freewarelovers.com/', 'www.appbrain.com/',
-    'download.cnet.com/',
-    'www.vector.co.jp/soft/',
-    '([^/]+.)?filehippo.com/',
-    '(?!news)[^/]+.soft(onic|pedia).(com|jp)/',
-    '[^/]+.uptodown.com/', '[^/]+.apportal.jp', '[^/]+.brothersoft.jp',
-
-    // Twitter mirrors
-    '([^/]+.)?twilog.org/',
-
     // Knowledge communities
-    'ziddy.japan.zdnet.com/', 'soudan1.biglobe.ne.jp/', 'qanda.rakuten.ne.jp/',
-    'www.itmedia.co.jp/qa/', 'qa.itmedia.co.jp/', 'answers.microsoft.com/',
-    'oshiete1?.(nifty.com|goo.ne.jp)/',
+    'soudan1?.biglobe.ne.jp/', 'oshiete1?.goo.ne.jp/',
+    'answers.microsoft.com/',
     '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
-
-    // Curation media
-    'matome.naver.jp/',
 
     // EC
     '(e?search|item).rakuten.co.jp/',
 
     // Community
     'www.nicovideo.jp/',
-
-    // Anime leakers
-    'anime.dougasouko.com/',
-    '([^/]+.)?anitube.se/',
-    '([^/]*(anime|youtube)[^/]*|mvnavian).blog[0-9]*.(fc2.com|fc2blog.us)/',
-
-    // DLL listings
-    'systemexplorer.net/', '[^/]+.dll-files.com/',
-
-    // Linux package listings
-    'packages.(debian|ubuntu).(com|org)/',
 
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
@@ -60,9 +34,6 @@
     'www.it-swarm.dev/', 'www.it-swarm-ja.tech/', 'www.thinbug.com/',
     'bugsdb.com/', 'qastack.jp/', 'www.366service.com/',
     '([^/]+.)?stackovernet.com/', '[^/]+.coder.work/',
-
-    // Mobile pages
-    'mobile.twitter.com/',
 
     // Rubbish
     'www.sejuku.net/',
