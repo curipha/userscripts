@@ -42,9 +42,9 @@
   const opacity = 0.2;
   const pattern = new RegExp(`^https?://(?:${block.join('|').replace(/([./])/g, '\\$1')})`, 'i');
 
-  const result = document.getElementsByClassName('g');
-  for (const li of result) {
-    const a = li.querySelector('.rc a[href]');
+  const results = document.getElementsByClassName('g');
+  for (const li of results) {
+    const a = li.querySelector('a[href^="http"]'); // Get the first element
     if (a && pattern.test(a.href)) {
       li.style.opacity = opacity;
     }
