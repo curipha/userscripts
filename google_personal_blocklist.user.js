@@ -26,6 +26,8 @@
 
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
+
+    // Translated copy
     'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
     'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'python5.com/',
     'www.it-swarm.dev/', 'www.it-swarm-ja.tech/', 'www.thinbug.com/',
