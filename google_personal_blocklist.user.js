@@ -13,19 +13,16 @@
 
   const block = [
     // Social bookmarks
-    'b.hatena.ne.jp/', 'hatebu-graph.com/',
+    'b.hatena.ne.jp/',
     '[^/]+.s.hatena.ne.jp/',
 
     // Knowledge communities
     'soudan1?.biglobe.ne.jp/', 'oshiete1?.goo.ne.jp/',
     'answers.microsoft.com/',
-    '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro(.travel)?.yahoo.co.jp/',
+    '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro.yahoo.co.jp/',
 
     // EC
     '(e?search|item).rakuten.co.jp/',
-
-    // Community
-    'www.nicovideo.jp/',
 
     // Mirror & Copy
     'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
