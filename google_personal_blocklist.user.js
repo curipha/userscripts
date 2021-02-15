@@ -13,26 +13,39 @@
 
   const block = [
     // Social bookmarks
-    'b.hatena.ne.jp/',
     '[^/]+.s.hatena.ne.jp/',
+    'b.hatena.ne.jp/',
 
     // Knowledge communities
-    'soudan1?.biglobe.ne.jp/', 'oshiete1?.goo.ne.jp/',
+    '([^/]+.)?chiebukuro.yahoo.co.jp/',
+    '([^/]+.)?okwave.jp/',
     'answers.microsoft.com/',
-    '([^/]+.)?okwave.jp/', '([^/]+.)?chiebukuro.yahoo.co.jp/',
+    'oshiete1?.goo.ne.jp/',
+    'soudan1?.biglobe.ne.jp/',
 
     // EC
     '(e?search|item).rakuten.co.jp/',
 
     // Mirror & Copy
-    'wpedia.goo.ne.jp/', 'sssslide.com/', 'ref.xaio.jp/',
+    'ref.xaio.jp/',
+    'sssslide.com/',
+    'wpedia.goo.ne.jp/',
 
     // Translated copy
-    'code.i-harness.com/', 'code-examples.net/', 'stackoverrun.com/',
-    'kotaeta.com/', 'codeday.me/', 'tutorialmore.com/', 'python5.com/',
-    'www.it-swarm(-ja)?.(dev|tech|jp.net)/', 'www.thinbug.com/',
-    'bugsdb.com/', 'qastack.jp/', 'www.366service.com/',
-    '([^/]+.)?stackovernet.com/', '[^/]+.coder.work/',
+    '([^/]+.)?stackovernet.com/',
+    '[^/]+.coder.work/',
+    'bugsdb.com/',
+    'code-examples.net/',
+    'code.i-harness.com/',
+    'codeday.me/',
+    'kotaeta.com/',
+    'python5.com/',
+    'qastack.jp/',
+    'stackoverrun.com/',
+    'tutorialmore.com/',
+    'www.366service.com/',
+    'www.it-swarm(-ja)?.(dev|tech|jp.net)/',
+    'www.thinbug.com/',
 
     // Rubbish
     'www.sejuku.net/',
