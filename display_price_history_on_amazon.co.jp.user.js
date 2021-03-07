@@ -38,7 +38,7 @@
 
         const anchor = document.createElement('a');
         anchor.href = `https://keepa.com/#!product/5-${asin}`;
-        anchor.rel = 'noopener noreferrer';
+        anchor.rel = 'noreferrer';
         anchor.referrerPolicy = 'no-referrer';
 
         const image = document.createElement('img');
