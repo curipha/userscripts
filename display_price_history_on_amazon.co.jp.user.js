@@ -16,9 +16,6 @@
 (function() {
   'use strict';
 
-  const width = 580;
-  const height = 240;
-
   let current_asin = '';
 
   const get_asin = function() {
@@ -42,10 +39,8 @@
         anchor.referrerPolicy = 'no-referrer';
 
         const image = document.createElement('img');
-        image.src = `https://graph.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}&width=${width}&height=${height}`;
+        image.src = `https://graph.keepa.com/pricehistory.png?domain=co.jp&asin=${asin}`;
         image.alt = 'Price history';
-        image.width = width;
-        image.height = height;
         image.referrerPolicy = 'no-referrer';
 
         anchor.appendChild(image);
