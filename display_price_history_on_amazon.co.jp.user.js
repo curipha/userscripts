@@ -31,7 +31,7 @@
     if (pricediv) {
       const asin = get_asin();
       if (asin) {
-        current_asin = asin; // Update current asin value to avoid consecutive updating of graph
+        current_asin = asin; // Store ASIN code to check variation change
 
         const history = document.createElement('div');
         history.className = 'a-section a-spacing-small';
@@ -58,7 +58,7 @@
   insert_graph();
 
 
-  // Capture variation select and update the graph
+  // Update the graph when changing product variations
   const target = document.getElementById('desktop_buybox') || document.getElementById('buybox_feature_div');
   if (target) {
     const update_graph = (mutations) => {
