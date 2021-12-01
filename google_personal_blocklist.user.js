@@ -13,7 +13,6 @@
 
   const block = [
     // Social bookmarks
-    '[^/]+.s.hatena.ne.jp/',
     'b.hatena.ne.jp/',
 
     // Knowledge communities
@@ -21,7 +20,7 @@
     '([^/]+.)?okwave.jp/',
     'answers.microsoft.com/',
     'oshiete1?.goo.ne.jp/',
-    'soudan1?.biglobe.ne.jp/',
+    'soudan1.biglobe.ne.jp/',
 
     // EC
     '(e?search|item).rakuten.co.jp/',
@@ -32,18 +31,14 @@
     'wpedia.goo.ne.jp/',
 
     // Translated copy
-    '([^/]+.)?stackovernet.com/',
     '[^/]+.coder.work/',
-    'bugsdb.com/',
     'code-examples.net/',
     'code.i-harness.com/',
     'codeday.me/',
+    'coderedirect.com/',
     'kotaeta.com/',
-    'python5.com/',
     'qastack.jp/',
-    'stackoverrun.com/',
     'tutorialmore.com/',
-    'www.366service.com/',
     'www.it-swarm(-ja)?.(dev|tech|jp.net)/',
     'www.thinbug.com/',
 
