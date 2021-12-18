@@ -31,6 +31,7 @@
     'wpedia.goo.ne.jp/',
 
     // Translated copy
+    '[^/]+.asklobster.com/',
     '[^/]+.coder.work/',
     'code-examples.net/',
     'code.i-harness.com/',
@@ -41,6 +42,7 @@
     'tutorialmore.com/',
     'www.it-swarm(-ja)?.(dev|tech|jp.net)/',
     'www.thinbug.com/',
+    'www.webdevqa.jp.net/',
 
     // Rubbish
     'www.sejuku.net/',
