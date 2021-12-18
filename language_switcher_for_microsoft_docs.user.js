@@ -17,7 +17,7 @@
 
     const anchor = document.createElement('a');
     anchor.href = location.pathname.replace(/(?<=^\/)[A-Za-z0-9-]+(?=\/)/, tolang) + location.search;
-    anchor.className = 'button is-small is-text has-inner-focus has-margin-bottom-small has-border-top has-border-bottom';
+    anchor.className = 'button button-clear button-sm is-small has-margin-bottom-small has-border-top has-border-bottom is-full-width display-block border-none';
 
     const icon = document.createElement('span');
     icon.className = 'icon is-size-8 has-text-subtle';
