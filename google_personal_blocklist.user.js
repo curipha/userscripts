@@ -3,7 +3,7 @@
 // @namespace      curipha
 // @description    Obscure annoying pages from search result
 // @include        https://www.google.tld/search?*
-// @version        0.5.3
+// @version        0.5.4
 // @grant          none
 // @noframes
 // ==/UserScript==
