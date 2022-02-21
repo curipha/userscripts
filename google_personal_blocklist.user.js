@@ -53,10 +53,6 @@
 
   const results = document.getElementsByClassName('g');
   for (const li of results) {
-    if (li.classList.length > 1) {
-      continue;
-    }
-
     const a = li.querySelector('a[href^="http"]'); // Get the first element
     if (a && pattern.test(a.href)) {
       li.style.opacity = opacity;
