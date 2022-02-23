@@ -33,18 +33,24 @@ rules:
   eqeqeq:
     - error
     - always
+  strict:
+    - error
+    - function
   yoda:
     - error
     - never
 
   consistent-return: error
+  require-unicode-regexp: error
 
   prefer-const: warn
   prefer-template: warn
 
+  no-bitwise: error
   no-confusing-arrow: error
   no-else-return: error
   no-eq-null: error
+  no-eval: error
   no-lonely-if: error
   no-shadow: error
   no-unneeded-ternary: error
