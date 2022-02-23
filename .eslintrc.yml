@@ -1,7 +1,6 @@
-parserOptions:
-  ecmaVersion: 2018
 env:
   browser: true
+  es2018: true
   greasemonkey: true
 extends: 'eslint:recommended'
 rules:
