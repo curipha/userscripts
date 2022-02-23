@@ -41,7 +41,6 @@ rules:
     - never
 
   consistent-return: error
-  require-unicode-regexp: error
 
   prefer-const: warn
   prefer-template: warn
