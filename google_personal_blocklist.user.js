@@ -42,6 +42,7 @@
     'tutorialmore.com/',
     'www.it-swarm(-ja)?.(dev|tech|jp.net)/',
     'www.thinbug.com/',
+    'www.web-dev-qa-db-ja.com/',
     'www.webdevqa.jp.net/',
 
     // Rubbish
