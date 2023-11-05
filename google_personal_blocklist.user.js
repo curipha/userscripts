@@ -52,11 +52,34 @@
   const opacity = 0.2;
   const pattern = new RegExp(`^https?://(?:${block.join('|').replace(/([./])/g, '\\$1')})`, 'i');
 
-  const results = document.getElementsByClassName('g');
-  for (const li of results) {
-    const a = li.querySelector('a[href^="http"]'); // Get the first element
-    if (a && pattern.test(a.href)) {
-      li.style.opacity = opacity;
+
+  const obscure = function(target) {
+    const results = target.getElementsByClassName('g');
+    for (const li of results) {
+      const a = li.querySelector('a[href^="http"]'); // Get the first element
+      if (a && pattern.test(a.href)) {
+        li.style.opacity = opacity;
+      }
     }
+  };
+
+  obscure(document.body);
+
+
+  // Update the results when addtional results are loaded
+  const target = document.getElementById('botstuff');
+  if (target) {
+    const hide_loaded_results = (mutations) => {
+      for (const mutation of mutations.filter((m) => m.addedNodes.length > 0)) {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeName === 'DIV' && node.getAttribute('data-async-context')) {
+            obscure(node)
+          }
+        });
+      };
+    };
+
+    const mo = new MutationObserver(hide_loaded_results);
+    mo.observe(target, { subtree: true, childList: true });
   }
 })();
