@@ -2,7 +2,7 @@
 // @name           Language switcher for Microsoft Docs
 // @namespace      curipha
 // @description    Add language menu
-// @include        https://learn.microsoft.com/*
+// @match          https://learn.microsoft.com/*
 // @version        0.0.4
 // @grant          none
 // @noframes
