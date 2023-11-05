@@ -57,12 +57,9 @@
   const target = document.getElementById('desktop_buybox') || document.getElementById('buybox_feature_div');
   if (target) {
     const update_graph = (mutations) => {
-      for (const mutation of mutations.filter((m) => m.addedNodes.length > 0)) {
-        if (get_asin() !== current_asin) {
-          insert_graph();
-          return;
-        }
-      };
+      if (mutations.some((m) => m.addedNodes.length > 0) && get_asin() !== current_asin) {
+        insert_graph();
+      }
     };
 
     const mo = new MutationObserver(update_graph);
