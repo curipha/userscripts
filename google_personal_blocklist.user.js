@@ -73,10 +73,10 @@
       for (const mutation of mutations.filter((m) => m.addedNodes.length > 0)) {
         mutation.addedNodes.forEach((node) => {
           if (node.nodeName === 'DIV' && node.getAttribute('data-async-context')) {
-            obscure(node)
+            obscure(node);
           }
         });
-      };
+      }
     };
 
     const mo = new MutationObserver(hide_loaded_results);
