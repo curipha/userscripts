@@ -1,9 +1,9 @@
-import { defineConfig } from "eslint/config";
 import globals from "globals";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
+import path from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";
+import { defineConfig } from "eslint/config";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +21,7 @@ export default defineConfig([{
       ...globals.browser,
       ...globals.greasemonkey,
     },
+    sourceType: "script",
   },
 
   rules: {
