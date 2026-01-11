@@ -54,7 +54,7 @@
 
 
   const obscure = function(target) {
-    const results = target.getElementsByClassName('g');
+    const results = target.getElementsByClassName('MjjYud');
     for (const li of results) {
       const a = li.querySelector('a[href^="http"]'); // Get the first element
       if (a && pattern.test(a.href)) {
